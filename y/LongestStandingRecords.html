@@ -1,0 +1,5643 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Longest Standing Records</title>
+      <link rel="stylesheet" type="text/css" href="styles/styles_LS.css">
+      <script>
+        function calculateStoodFor() {
+          const baseDate = new Date(1900, 0, 0); // Jan 0, 1900 to match Excel's date system
+          const today = new Date();
+          const daysSinceBaseDate = Math.floor((today - baseDate) / (1000 * 60 * 60 * 24));
+
+          const unbeatenRecords = document.querySelectorAll('.unbeaten');
+          unbeatenRecords.forEach(function(record) {
+            const dateAchieved = parseInt(record.getAttribute('data-date-achieved'), 10);
+            const stoodFor = daysSinceBaseDate - dateAchieved;
+            record.innerText = stoodFor;
+          });
+        }
+
+        window.onload = calculateStoodFor;
+      </script>
+    </head>
+    <body>
+      <div class="main-container">
+        <h1>Longest Standing Records (All Game Modes)</h1>
+        <div class="content">
+          <table>
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Record</th>
+                <th>Record Time</th>
+                <th>Player</th>
+                <th>Date Achieved</th>
+                <th>Date Beaten</th>
+                <th>Stood For (days)</th>
+              </tr>
+            </thead>
+            <tbody>
+      <tr>
+        <td>1</td>
+        <td>Badlands Motorplex (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:22.180</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 12, 2020</td>
+        <td>Aug 08, 2024</td>
+        <td>1365</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>2:22.456</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 28, 2020</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44162"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>1:21.766</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 01, 2020</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44165"></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Cannon Crossover (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>3:02.911</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 02, 2020</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44166"></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Lighthouse Loop (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>2:50.661</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 02, 2020</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44166"></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>2:22.265</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Dec 11, 2020</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44175"></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Badlands Motorplex (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>2:07.140</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Dec 11, 2020</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44175"></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>3:36.674</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Dec 11, 2020</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44175"></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Aviator Ranch (Shortcut) 200 HP in Pro Race</td>
+        <td>1:29.233</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Feb 03, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44229"></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Pro Race</td>
+        <td>2:46.525</td>
+        <td><span style="color:#ee4444">LuckyLuca593</span></td>
+        <td>Jan 30, 2021</td>
+        <td>Aug 04, 2024</td>
+        <td>1282</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Twisted Canyon (Shortcut) 200 HP in Pro Race</td>
+        <td>2:32.693</td>
+        <td><span style="color:#ee4444">LuckyLuca593</span></td>
+        <td>Jan 30, 2021</td>
+        <td>Aug 04, 2024</td>
+        <td>1282</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Twisted Canyon (Shortcut) 300 HP in Pro Race</td>
+        <td>2:26.491</td>
+        <td><span style="color:#ee4444">LuckyLuca593</span></td>
+        <td>Jan 30, 2021</td>
+        <td>Aug 04, 2024</td>
+        <td>1282</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>Gold Rush Road (Shortcut) 300 HP in Time Trial</td>
+        <td>0:41.049</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Feb 18, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44244"></td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>Cannon Crossover (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>3:19.872</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Dec 11, 2020</td>
+        <td>May 17, 2024</td>
+        <td>1253</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>Aviator Ranch (Shortcut) 300 HP in Time Trial</td>
+        <td>0:10.432</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Apr 30, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44315"></td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>Twisted Canyon (Shortcut) 200 HP in Time Trial</td>
+        <td>0:27.994</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 05, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44320"></td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>Aviator Ranch (Shortcut) 100 HP in Pro Race</td>
+        <td>1:35.269</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 22, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44337"></td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>Gold Rush Road (Shortcut) 200 HP in Time Trial</td>
+        <td>0:45.810</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 22, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44337"></td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>3:19.964</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 01, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44347"></td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>2:19.407</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44350"></td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>Gold Rush Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:51.611</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Feb 18, 2021</td>
+        <td>Mar 24, 2024</td>
+        <td>1130</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>Gold Rush Road (Shortcut) 100 HP in Time Trial</td>
+        <td>0:50.389</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 18, 2021</td>
+        <td>Aug 17, 2024</td>
+        <td>1095</td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>Lighthouse Loop (Shortcut) 100 HP in Time Trial</td>
+        <td>0:28.447</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Apr 03, 2021</td>
+        <td>Apr 01, 2024</td>
+        <td>1094</td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>Lighthouse Loop (Shortcut) 200 HP in Time Trial</td>
+        <td>0:27.271</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Apr 03, 2021</td>
+        <td>Apr 01, 2024</td>
+        <td>1094</td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>Lighthouse Loop (Shortcut) 300 HP in Time Trial</td>
+        <td>0:25.767</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Apr 03, 2021</td>
+        <td>Mar 30, 2024</td>
+        <td>1092</td>
+      </tr>
+      <tr>
+        <td>26</td>
+        <td>Great Dragon Road (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:18.775</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 30, 2021</td>
+        <td>Mar 23, 2024</td>
+        <td>1089</td>
+      </tr>
+      <tr>
+        <td>27</td>
+        <td>Cannon Crossover (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:36.908</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Apr 12, 2021</td>
+        <td>Mar 24, 2024</td>
+        <td>1077</td>
+      </tr>
+      <tr>
+        <td>28</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>1:26.889</td>
+        <td><span style="color:#b8b8b8">AB20</span></td>
+        <td>Sep 09, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44447"></td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td>Aviator Ranch (Shortcut) 300 HP in Pro Race</td>
+        <td>1:17.372</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 22, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44490"></td>
+      </tr>
+      <tr>
+        <td>30</td>
+        <td>Forbidden Fortress (Non-Shortcut) 300 HP in Battle Race</td>
+        <td>2:25.735</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 23, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44491"></td>
+      </tr>
+      <tr>
+        <td>30</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>1:36.364</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 23, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44491"></td>
+      </tr>
+      <tr>
+        <td>30</td>
+        <td>Forbidden Fortress (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:28.747</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 23, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44491"></td>
+      </tr>
+      <tr>
+        <td>33</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>2:10.235</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 25, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44493"></td>
+      </tr>
+      <tr>
+        <td>34</td>
+        <td>Forbidden Fortress (Shortcut) 200 HP in Time Trial</td>
+        <td>0:13.164</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 27, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44495"></td>
+      </tr>
+      <tr>
+        <td>35</td>
+        <td>Aviator Ranch (Shortcut) 200 HP in Time Trial</td>
+        <td>0:13.415</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 07, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44506"></td>
+      </tr>
+      <tr>
+        <td>35</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:23.504</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 07, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44506"></td>
+      </tr>
+      <tr>
+        <td>37</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>2:25.836</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>Sep 05, 2021</td>
+        <td>May 16, 2024</td>
+        <td>984</td>
+      </tr>
+      <tr>
+        <td>38</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>1:27.199</td>
+        <td><span style="color:#b8b8b8">AB20</span></td>
+        <td>Sep 10, 2021</td>
+        <td>May 17, 2024</td>
+        <td>980</td>
+      </tr>
+      <tr>
+        <td>39</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP in Time Trial</td>
+        <td>0:12.399</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 23, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44552"></td>
+      </tr>
+      <tr>
+        <td>39</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Time Trial</td>
+        <td>0:29.565</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 23, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44552"></td>
+      </tr>
+      <tr>
+        <td>39</td>
+        <td>Twisted Canyon (Shortcut) 300 HP in Time Trial</td>
+        <td>0:26.515</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 23, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44552"></td>
+      </tr>
+      <tr>
+        <td>42</td>
+        <td>Great Dragon Road (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:20.821</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 09, 2021</td>
+        <td>Mar 23, 2024</td>
+        <td>957</td>
+      </tr>
+      <tr>
+        <td>43</td>
+        <td>Lighthouse Loop (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>3:06.191</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 29, 2020</td>
+        <td>Jul 06, 2023</td>
+        <td>949</td>
+      </tr>
+      <tr>
+        <td>43</td>
+        <td>Twisted Canyon (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:34.325</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 18, 2021</td>
+        <td>Mar 24, 2024</td>
+        <td>949</td>
+      </tr>
+      <tr>
+        <td>45</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>3:17.003</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Dec 05, 2020</td>
+        <td>Jul 06, 2023</td>
+        <td>943</td>
+      </tr>
+      <tr>
+        <td>46</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:25.761</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 31, 2021</td>
+        <td>Mar 25, 2024</td>
+        <td>937</td>
+      </tr>
+      <tr>
+        <td>47</td>
+        <td>Forbidden Fortress (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>2:20.819</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>Sep 05, 2021</td>
+        <td>Mar 29, 2024</td>
+        <td>936</td>
+      </tr>
+      <tr>
+        <td>48</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:43.916</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 29, 2021</td>
+        <td>Apr 15, 2024</td>
+        <td>899</td>
+      </tr>
+      <tr>
+        <td>49</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>2:14.245</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 29, 2020</td>
+        <td>May 06, 2023</td>
+        <td>888</td>
+      </tr>
+      <tr>
+        <td>50</td>
+        <td>Aviator Ranch (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>2:02.726</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 25, 2021</td>
+        <td>Mar 29, 2024</td>
+        <td>886</td>
+      </tr>
+      <tr>
+        <td>50</td>
+        <td>Boathouse Bay (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:22.003</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 25, 2021</td>
+        <td>Mar 29, 2024</td>
+        <td>886</td>
+      </tr>
+      <tr>
+        <td>52</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:23.784</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 25, 2021</td>
+        <td>Mar 25, 2024</td>
+        <td>882</td>
+      </tr>
+      <tr>
+        <td>53</td>
+        <td>Lighthouse Loop (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:32.947</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 25, 2021</td>
+        <td>Mar 24, 2024</td>
+        <td>881</td>
+      </tr>
+      <tr>
+        <td>54</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:16.551</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 25, 2021</td>
+        <td>Mar 22, 2024</td>
+        <td>879</td>
+      </tr>
+      <tr>
+        <td>55</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Time Trial</td>
+        <td>0:14.003</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 29, 2021</td>
+        <td>Mar 24, 2024</td>
+        <td>877</td>
+      </tr>
+      <tr>
+        <td>56</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>2:16.406</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Dec 11, 2020</td>
+        <td>May 01, 2023</td>
+        <td>871</td>
+      </tr>
+      <tr>
+        <td>57</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:24.973</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 07, 2021</td>
+        <td>Feb 03, 2024</td>
+        <td>818</td>
+      </tr>
+      <tr>
+        <td>58</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:36.876</td>
+        <td><span style="color:#6666ee">MachrixTM</span></td>
+        <td>Jan 07, 2022</td>
+        <td>Mar 21, 2024</td>
+        <td>804</td>
+      </tr>
+      <tr>
+        <td>59</td>
+        <td>Great Dragon Road (Non-Shortcut) 300 HP in Battle Race</td>
+        <td>2:11.274</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 10, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44751"></td>
+      </tr>
+      <tr>
+        <td>59</td>
+        <td>Lighthouse Loop (Non-Shortcut) 300 HP in Battle Race</td>
+        <td>3:05.330</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 10, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44751"></td>
+      </tr>
+      <tr>
+        <td>59</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 300 HP in Battle Race</td>
+        <td>1:36.053</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 10, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44751"></td>
+      </tr>
+      <tr>
+        <td>62</td>
+        <td>Badlands Motorplex (Non-Shortcut) 300 HP in Battle Race</td>
+        <td>2:16.416</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 11, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44752"></td>
+      </tr>
+      <tr>
+        <td>63</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>3:38.052</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>May 28, 2021</td>
+        <td>Jul 07, 2023</td>
+        <td>770</td>
+      </tr>
+      <tr>
+        <td>64</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:38.033</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Feb 17, 2022</td>
+        <td>Mar 27, 2024</td>
+        <td>769</td>
+      </tr>
+      <tr>
+        <td>64</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:14.152</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Feb 16, 2022</td>
+        <td>Mar 26, 2024</td>
+        <td>769</td>
+      </tr>
+      <tr>
+        <td>66</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>2:23.783</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>May 28, 2021</td>
+        <td>Jul 03, 2023</td>
+        <td>766</td>
+      </tr>
+      <tr>
+        <td>66</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:15.467</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Feb 17, 2022</td>
+        <td>Mar 24, 2024</td>
+        <td>766</td>
+      </tr>
+      <tr>
+        <td>68</td>
+        <td>Aviator Ranch (Shortcut) 100 HP in Battle Race</td>
+        <td>2:27.300</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 01, 2021</td>
+        <td>Jul 01, 2023</td>
+        <td>760</td>
+      </tr>
+      <tr>
+        <td>69</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP in Pro Race</td>
+        <td>1:07.877</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>May 18, 2021</td>
+        <td>Jun 15, 2023</td>
+        <td>758</td>
+      </tr>
+      <tr>
+        <td>70</td>
+        <td>Aviator Ranch (Shortcut) 200 HP in Battle Race</td>
+        <td>2:20.956</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>Jul 01, 2023</td>
+        <td>757</td>
+      </tr>
+      <tr>
+        <td>71</td>
+        <td>Gold Rush Road (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>4:28.788</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Feb 17, 2021</td>
+        <td>Mar 10, 2023</td>
+        <td>751</td>
+      </tr>
+      <tr>
+        <td>72</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:22.171</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 04, 2022</td>
+        <td>Mar 23, 2024</td>
+        <td>750</td>
+      </tr>
+      <tr>
+        <td>73</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>2:14.781</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>Aug 02, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44774"></td>
+      </tr>
+      <tr>
+        <td>74</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>4:15.112</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Dec 02, 2020</td>
+        <td>Dec 15, 2022</td>
+        <td>743</td>
+      </tr>
+      <tr>
+        <td>75</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>1:35.362</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 03, 2021</td>
+        <td>May 07, 2023</td>
+        <td>734</td>
+      </tr>
+      <tr>
+        <td>76</td>
+        <td>Gold Rush Road (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>4:37.152</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 02, 2021</td>
+        <td>Jul 03, 2023</td>
+        <td>731</td>
+      </tr>
+      <tr>
+        <td>77</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>4:02.785</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Dec 17, 2020</td>
+        <td>Dec 15, 2022</td>
+        <td>728</td>
+      </tr>
+      <tr>
+        <td>78</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>4:26.478</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>Jun 01, 2023</td>
+        <td>727</td>
+      </tr>
+      <tr>
+        <td>79</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>2:21.967</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>May 31, 2023</td>
+        <td>726</td>
+      </tr>
+      <tr>
+        <td>79</td>
+        <td>Cannon Crossover (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>3:27.474</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>May 31, 2023</td>
+        <td>726</td>
+      </tr>
+      <tr>
+        <td>79</td>
+        <td>Lighthouse Loop (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>3:13.685</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>May 31, 2023</td>
+        <td>726</td>
+      </tr>
+      <tr>
+        <td>82</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>2:22.913</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>May 29, 2023</td>
+        <td>724</td>
+      </tr>
+      <tr>
+        <td>82</td>
+        <td>Great Dragon Road (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>2:11.627</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>May 29, 2023</td>
+        <td>724</td>
+      </tr>
+      <tr>
+        <td>84</td>
+        <td>Lighthouse Loop (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:35.437</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 17, 2020</td>
+        <td>Oct 06, 2022</td>
+        <td>719</td>
+      </tr>
+      <tr>
+        <td>85</td>
+        <td>Great Dragon Road (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:22.629</td>
+        <td><span style="color:#8ac951">Zimmycakes</span></td>
+        <td>Jun 19, 2017</td>
+        <td>May 28, 2019</td>
+        <td>708</td>
+      </tr>
+      <tr>
+        <td>86</td>
+        <td>Aviator Ranch (Shortcut) 300 HP in Time Trial</td>
+        <td>0:16.043</td>
+        <td><span style="color:#a010a0">ejones808</span></td>
+        <td>Dec 01, 2018</td>
+        <td>Nov 03, 2020</td>
+        <td>703</td>
+      </tr>
+      <tr>
+        <td>87</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Battle Race</td>
+        <td>1:29.128</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Sep 21, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44824"></td>
+      </tr>
+      <tr>
+        <td>87</td>
+        <td>Twisted Canyon (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>3:28.293</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 10, 2022</td>
+        <td>Jun 08, 2024</td>
+        <td>699</td>
+      </tr>
+      <tr>
+        <td>89</td>
+        <td>Forbidden Fortress (Shortcut) 200 HP in Battle Race</td>
+        <td>1:23.154</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Sep 23, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44826"></td>
+      </tr>
+      <tr>
+        <td>89</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP in Battle Race</td>
+        <td>1:18.525</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Sep 23, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44826"></td>
+      </tr>
+      <tr>
+        <td>91</td>
+        <td>Twisted Canyon (Shortcut) 200 HP in Battle Race</td>
+        <td>2:57.562</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Sep 29, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44832"></td>
+      </tr>
+      <tr>
+        <td>91</td>
+        <td>Twisted Canyon (Shortcut) 300 HP in Battle Race</td>
+        <td>2:48.597</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Sep 29, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44832"></td>
+      </tr>
+      <tr>
+        <td>93</td>
+        <td>Cannon Crossover (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:34.847</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 15, 2020</td>
+        <td>Oct 06, 2022</td>
+        <td>690</td>
+      </tr>
+      <tr>
+        <td>94</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Battle Race</td>
+        <td>3:03.109</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Sep 29, 2022</td>
+        <td>Jul 31, 2024</td>
+        <td>671</td>
+      </tr>
+      <tr>
+        <td>95</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:24.464</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 07, 2022</td>
+        <td>Aug 03, 2024</td>
+        <td>666</td>
+      </tr>
+      <tr>
+        <td>96</td>
+        <td>Boathouse Bay (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>2:03.686</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Feb 18, 2021</td>
+        <td>Dec 15, 2022</td>
+        <td>665</td>
+      </tr>
+      <tr>
+        <td>97</td>
+        <td>Forbidden Fortress (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>2:43.134</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>Sep 05, 2021</td>
+        <td>Jul 01, 2023</td>
+        <td>664</td>
+      </tr>
+      <tr>
+        <td>98</td>
+        <td>Twisted Canyon (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>3:32.129</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Nov 28, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44892"></td>
+      </tr>
+      <tr>
+        <td>99</td>
+        <td>Twisted Canyon (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>3:22.027</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 10, 2022</td>
+        <td>Mar 29, 2024</td>
+        <td>628</td>
+      </tr>
+      <tr>
+        <td>100</td>
+        <td>Forbidden Fortress (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>2:46.119</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 23, 2021</td>
+        <td>Jul 06, 2023</td>
+        <td>621</td>
+      </tr>
+      <tr>
+        <td>100</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>2:35.862</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 23, 2021</td>
+        <td>Jul 06, 2023</td>
+        <td>621</td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Great Dragon Road (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>1:50.987</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Dec 08, 2020</td>
+        <td>Aug 18, 2022</td>
+        <td>618</td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>Twisted Canyon (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>3:27.265</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>Feb 11, 2023</td>
+        <td>617</td>
+      </tr>
+      <tr>
+        <td>104</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>2:32.666</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 23, 2021</td>
+        <td>Jul 01, 2023</td>
+        <td>616</td>
+      </tr>
+      <tr>
+        <td>105</td>
+        <td>Boathouse Bay (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>2:02.983</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>Dec 15, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44909"></td>
+      </tr>
+      <tr>
+        <td>106</td>
+        <td>Great Dragon Road (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>2:02.800</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 29, 2020</td>
+        <td>Aug 02, 2022</td>
+        <td>611</td>
+      </tr>
+      <tr>
+        <td>106</td>
+        <td>Twisted Canyon (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:36.451</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 06, 2022</td>
+        <td>Jun 08, 2024</td>
+        <td>611</td>
+      </tr>
+      <tr>
+        <td>106</td>
+        <td>Twisted Canyon (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:35.612</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 06, 2022</td>
+        <td>Jun 08, 2024</td>
+        <td>611</td>
+      </tr>
+      <tr>
+        <td>109</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:25.566</td>
+        <td><span style="color:#6666ee">Some_Guy5</span></td>
+        <td>Dec 05, 2022</td>
+        <td>Aug 03, 2024</td>
+        <td>607</td>
+      </tr>
+      <tr>
+        <td>110</td>
+        <td>Aviator Ranch (Shortcut) 100 HP in Time Trial</td>
+        <td>0:17.454</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Feb 18, 2021</td>
+        <td>Oct 08, 2022</td>
+        <td>597</td>
+      </tr>
+      <tr>
+        <td>111</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:48.578</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 23, 2021</td>
+        <td>Jun 06, 2023</td>
+        <td>591</td>
+      </tr>
+      <tr>
+        <td>112</td>
+        <td>Great Dragon Road (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>1:50.788</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>Aug 18, 2022</td>
+        <td>Mar 29, 2024</td>
+        <td>589</td>
+      </tr>
+      <tr>
+        <td>113</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Pro Race</td>
+        <td>1:21.511</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>May 18, 2021</td>
+        <td>Dec 02, 2022</td>
+        <td>563</td>
+      </tr>
+      <tr>
+        <td>113</td>
+        <td>Forbidden Fortress (Shortcut) 200 HP in Pro Race</td>
+        <td>1:13.559</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>May 18, 2021</td>
+        <td>Dec 02, 2022</td>
+        <td>563</td>
+      </tr>
+      <tr>
+        <td>115</td>
+        <td>Twisted Canyon (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>3:25.636</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Feb 11, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44967"></td>
+      </tr>
+      <tr>
+        <td>116</td>
+        <td>Twisted Canyon (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>3:32.905</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>May 30, 2021</td>
+        <td>Nov 28, 2022</td>
+        <td>547</td>
+      </tr>
+      <tr>
+        <td>117</td>
+        <td>Cannon Crossover (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:34.812</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 06, 2022</td>
+        <td>Mar 27, 2024</td>
+        <td>538</td>
+      </tr>
+      <tr>
+        <td>118</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>2:15.344</td>
+        <td><span style="color:#f0c03e">WickedWill944</span></td>
+        <td>Feb 11, 2021</td>
+        <td>Aug 02, 2022</td>
+        <td>537</td>
+      </tr>
+      <tr>
+        <td>119</td>
+        <td>Aviator Ranch (Shortcut) 100 HP in Time Trial</td>
+        <td>0:17.174</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 08, 2022</td>
+        <td>Mar 25, 2024</td>
+        <td>534</td>
+      </tr>
+      <tr>
+        <td>120</td>
+        <td>Lighthouse Loop (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:35.228</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 06, 2022</td>
+        <td>Mar 22, 2024</td>
+        <td>533</td>
+      </tr>
+      <tr>
+        <td>121</td>
+        <td>Aviator Ranch (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:22.936</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 07, 2022</td>
+        <td>Mar 22, 2024</td>
+        <td>532</td>
+      </tr>
+      <tr>
+        <td>122</td>
+        <td>Gold Rush Road (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>4:28.683</td>
+        <td><span style="color:#8ac951">Bikerbabo16</span></td>
+        <td>Mar 10, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44994"></td>
+      </tr>
+      <tr>
+        <td>123</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>3:49.112</td>
+        <td><span style="color:#8ac951">Bikerbabo16</span></td>
+        <td>Apr 07, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45022"></td>
+      </tr>
+      <tr>
+        <td>124</td>
+        <td>Aviator Ranch (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:23.754</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Oct 07, 2022</td>
+        <td>491</td>
+      </tr>
+      <tr>
+        <td>125</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Battle Race</td>
+        <td>3:03.195</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>May 29, 2021</td>
+        <td>Sep 29, 2022</td>
+        <td>488</td>
+      </tr>
+      <tr>
+        <td>126</td>
+        <td>Great Dragon Road (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:19.630</td>
+        <td><span style="color:#ff3091">BroskiRacing</span></td>
+        <td>Jun 08, 2019</td>
+        <td>Oct 05, 2020</td>
+        <td>485</td>
+      </tr>
+      <tr>
+        <td>127</td>
+        <td>Twisted Canyon (Shortcut) 200 HP in Battle Race</td>
+        <td>3:03.026</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>Sep 29, 2022</td>
+        <td>482</td>
+      </tr>
+      <tr>
+        <td>128</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Battle Race</td>
+        <td>1:29.324</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>May 29, 2021</td>
+        <td>Sep 21, 2022</td>
+        <td>480</td>
+      </tr>
+      <tr>
+        <td>129</td>
+        <td>Forbidden Fortress (Shortcut) 200 HP in Battle Race</td>
+        <td>1:24.869</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>Sep 23, 2022</td>
+        <td>476</td>
+      </tr>
+      <tr>
+        <td>130</td>
+        <td>Great Dragon Road (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>2:02.696</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>May 29, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45074"></td>
+      </tr>
+      <tr>
+        <td>131</td>
+        <td>Lighthouse Loop (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>3:10.354</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>May 31, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45076"></td>
+      </tr>
+      <tr>
+        <td>132</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>2:15.796</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>Jun 01, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45077"></td>
+      </tr>
+      <tr>
+        <td>133</td>
+        <td>Aviator Ranch (Shortcut) 100 HP in Time Trial</td>
+        <td>0:20.008</td>
+        <td><span style="color:#ff3091">BroskiRacing</span></td>
+        <td>May 28, 2019</td>
+        <td>Aug 10, 2020</td>
+        <td>440</td>
+      </tr>
+      <tr>
+        <td>134</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP in Pro Race</td>
+        <td>1:05.732</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 18, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45094"></td>
+      </tr>
+      <tr>
+        <td>135</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:22.940</td>
+        <td><span style="color:#ff3091">BroskiRacing</span></td>
+        <td>Aug 11, 2019</td>
+        <td>Oct 05, 2020</td>
+        <td>421</td>
+      </tr>
+      <tr>
+        <td>136</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>1:31.888</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 28, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45104"></td>
+      </tr>
+      <tr>
+        <td>137</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>2:31.327</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 01, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45107"></td>
+      </tr>
+      <tr>
+        <td>137</td>
+        <td>Aviator Ranch (Shortcut) 100 HP in Battle Race</td>
+        <td>2:21.283</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 01, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45107"></td>
+      </tr>
+      <tr>
+        <td>137</td>
+        <td>Aviator Ranch (Shortcut) 200 HP in Battle Race</td>
+        <td>2:19.845</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 01, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45107"></td>
+      </tr>
+      <tr>
+        <td>137</td>
+        <td>Twisted Canyon (Non-Shortcut) 300 HP in Battle Race</td>
+        <td>3:22.631</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 01, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45107"></td>
+      </tr>
+      <tr>
+        <td>141</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>2:13.839</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 02, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45108"></td>
+      </tr>
+      <tr>
+        <td>141</td>
+        <td>Aviator Ranch (Non-Shortcut) 300 HP in Battle Race</td>
+        <td>2:12.590</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 02, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45108"></td>
+      </tr>
+      <tr>
+        <td>141</td>
+        <td>Aviator Ranch (Shortcut) 300 HP in Battle Race</td>
+        <td>1:40.567</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 02, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45108"></td>
+      </tr>
+      <tr>
+        <td>144</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>2:22.531</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 03, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45109"></td>
+      </tr>
+      <tr>
+        <td>144</td>
+        <td>Gold Rush Road (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>4:31.719</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 03, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45109"></td>
+      </tr>
+      <tr>
+        <td>144</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>4:14.392</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 03, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45109"></td>
+      </tr>
+      <tr>
+        <td>147</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>2:29.805</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 04, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45110"></td>
+      </tr>
+      <tr>
+        <td>147</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:27.260</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>Jul 04, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45110"></td>
+      </tr>
+      <tr>
+        <td>149</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>2:22.962</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 05, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45111"></td>
+      </tr>
+      <tr>
+        <td>150</td>
+        <td>Forbidden Fortress (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>2:44.066</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 06, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45112"></td>
+      </tr>
+      <tr>
+        <td>150</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>2:32.652</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 06, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45112"></td>
+      </tr>
+      <tr>
+        <td>150</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP in Battle Race</td>
+        <td>4:06.550</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 06, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45112"></td>
+      </tr>
+      <tr>
+        <td>150</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>3:16.690</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 06, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45112"></td>
+      </tr>
+      <tr>
+        <td>154</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>3:28.365</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 07, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45113"></td>
+      </tr>
+      <tr>
+        <td>154</td>
+        <td>Cannon Crossover (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>3:20.213</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 07, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45113"></td>
+      </tr>
+      <tr>
+        <td>154</td>
+        <td>Cannon Crossover (Non-Shortcut) 300 HP in Battle Race</td>
+        <td>3:16.498</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 07, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45113"></td>
+      </tr>
+      <tr>
+        <td>154</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Pro Race</td>
+        <td>1:17.562</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jul 07, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45113"></td>
+      </tr>
+      <tr>
+        <td>158</td>
+        <td>Forbidden Fortress (Shortcut) 200 HP in Pro Race</td>
+        <td>1:10.350</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jul 08, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45114"></td>
+      </tr>
+      <tr>
+        <td>159</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>4:07.816</td>
+        <td><span style="color:#8ac951">Bikerbabo16</span></td>
+        <td>Apr 07, 2023</td>
+        <td>May 17, 2024</td>
+        <td>406</td>
+      </tr>
+      <tr>
+        <td>160</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:47.328</td>
+        <td><span style="color:#ff3091">BroskiRacing</span></td>
+        <td>May 28, 2019</td>
+        <td>Jun 25, 2020</td>
+        <td>394</td>
+      </tr>
+      <tr>
+        <td>160</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:39.531</td>
+        <td><span style="color:#ff3091">BroskiRacing</span></td>
+        <td>May 28, 2019</td>
+        <td>Jun 25, 2020</td>
+        <td>394</td>
+      </tr>
+      <tr>
+        <td>162</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>2:13.569</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>Jul 29, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45135"></td>
+      </tr>
+      <tr>
+        <td>163</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>2:12.748</td>
+        <td><span style="color:#ee4444">Lunalotl</span></td>
+        <td>May 01, 2023</td>
+        <td>May 16, 2024</td>
+        <td>381</td>
+      </tr>
+      <tr>
+        <td>164</td>
+        <td>Great Dragon Road (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>2:01.177</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>May 06, 2023</td>
+        <td>May 16, 2024</td>
+        <td>376</td>
+      </tr>
+      <tr>
+        <td>165</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:27.789</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Sep 27, 2021</td>
+        <td>Oct 07, 2022</td>
+        <td>375</td>
+      </tr>
+      <tr>
+        <td>166</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:48.389</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>Jun 06, 2023</td>
+        <td>Jun 05, 2024</td>
+        <td>365</td>
+      </tr>
+      <tr>
+        <td>167</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:14.320</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Feb 19, 2021</td>
+        <td>Feb 16, 2022</td>
+        <td>362</td>
+      </tr>
+      <tr>
+        <td>168</td>
+        <td>Cannon Crossover (Non-Shortcut) 300 HP in Battle Race</td>
+        <td>3:19.669</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 11, 2022</td>
+        <td>Jul 07, 2023</td>
+        <td>361</td>
+      </tr>
+      <tr>
+        <td>169</td>
+        <td>Boathouse Bay (Non-Shortcut) 300 HP in Battle Race</td>
+        <td>2:21.216</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 10, 2022</td>
+        <td>Jul 05, 2023</td>
+        <td>360</td>
+      </tr>
+      <tr>
+        <td>169</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP in Battle Race</td>
+        <td>4:11.108</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 11, 2022</td>
+        <td>Jul 06, 2023</td>
+        <td>360</td>
+      </tr>
+      <tr>
+        <td>169</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>2:26.985</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 10, 2022</td>
+        <td>Jul 05, 2023</td>
+        <td>360</td>
+      </tr>
+      <tr>
+        <td>169</td>
+        <td>Twisted Canyon (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>3:31.304</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 10, 2022</td>
+        <td>Jul 05, 2023</td>
+        <td>360</td>
+      </tr>
+      <tr>
+        <td>173</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>2:30.687</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 11, 2022</td>
+        <td>Jul 04, 2023</td>
+        <td>358</td>
+      </tr>
+      <tr>
+        <td>174</td>
+        <td>Aviator Ranch (Non-Shortcut) 300 HP in Battle Race</td>
+        <td>2:13.132</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 10, 2022</td>
+        <td>Jul 02, 2023</td>
+        <td>357</td>
+      </tr>
+      <tr>
+        <td>174</td>
+        <td>Aviator Ranch (Shortcut) 300 HP in Battle Race</td>
+        <td>1:54.008</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 10, 2022</td>
+        <td>Jul 02, 2023</td>
+        <td>357</td>
+      </tr>
+      <tr>
+        <td>176</td>
+        <td>Twisted Canyon (Non-Shortcut) 300 HP in Battle Race</td>
+        <td>3:25.486</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 11, 2022</td>
+        <td>Jul 01, 2023</td>
+        <td>355</td>
+      </tr>
+      <tr>
+        <td>177</td>
+        <td>Forbidden Fortress (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:26.697</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 23, 2021</td>
+        <td>Oct 07, 2022</td>
+        <td>349</td>
+      </tr>
+      <tr>
+        <td>178</td>
+        <td>Twisted Canyon (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>3:25.517</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 05, 2023</td>
+        <td>Jun 08, 2024</td>
+        <td>339</td>
+      </tr>
+      <tr>
+        <td>179</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:49.101</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Nov 27, 2020</td>
+        <td>Oct 23, 2021</td>
+        <td>330</td>
+      </tr>
+      <tr>
+        <td>180</td>
+        <td>Twisted Canyon (Shortcut) 300 HP in Time Trial</td>
+        <td>0:26.581</td>
+        <td><span style="color:#ee4444">LuckyLuca593</span></td>
+        <td>Jan 28, 2021</td>
+        <td>Dec 23, 2021</td>
+        <td>329</td>
+      </tr>
+      <tr>
+        <td>181</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:25.162</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Dec 23, 2020</td>
+        <td>Nov 07, 2021</td>
+        <td>319</td>
+      </tr>
+      <tr>
+        <td>182</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>2:13.653</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 05, 2023</td>
+        <td>May 16, 2024</td>
+        <td>316</td>
+      </tr>
+      <tr>
+        <td>183</td>
+        <td>Lighthouse Loop (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>3:05.938</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 06, 2023</td>
+        <td>May 16, 2024</td>
+        <td>315</td>
+      </tr>
+      <tr>
+        <td>184</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>2:18.157</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 10, 2022</td>
+        <td>May 06, 2023</td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td>185</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:44.736</td>
+        <td><span style="color:#6666ee">Dontledeet</span></td>
+        <td>Jan 05, 2021</td>
+        <td>Oct 29, 2021</td>
+        <td>297</td>
+      </tr>
+      <tr>
+        <td>186</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:15.830</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Apr 28, 2021</td>
+        <td>Feb 17, 2022</td>
+        <td>295</td>
+      </tr>
+      <tr>
+        <td>187</td>
+        <td>Boathouse Bay (Non-Shortcut) 300 HP in Battle Race</td>
+        <td>2:06.158</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>Nov 03, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45232"></td>
+      </tr>
+      <tr>
+        <td>188</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:24.515</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 23, 2021</td>
+        <td>Oct 07, 2022</td>
+        <td>288</td>
+      </tr>
+      <tr>
+        <td>189</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:25.735</td>
+        <td><span style="color:#6666ee">Some_Guy5</span></td>
+        <td>Dec 23, 2021</td>
+        <td>Oct 06, 2022</td>
+        <td>287</td>
+      </tr>
+      <tr>
+        <td>190</td>
+        <td>Boathouse Bay (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:22.517</td>
+        <td><span style="color:#ff3091">Cosyy</span></td>
+        <td>Jan 22, 2020</td>
+        <td>Nov 03, 2020</td>
+        <td>286</td>
+      </tr>
+      <tr>
+        <td>191</td>
+        <td>Great Dragon Road (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>2:01.482</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>Aug 02, 2022</td>
+        <td>May 06, 2023</td>
+        <td>277</td>
+      </tr>
+      <tr>
+        <td>192</td>
+        <td>Aviator Ranch (Shortcut) 200 HP in Time Trial</td>
+        <td>0:14.209</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Feb 04, 2021</td>
+        <td>Nov 07, 2021</td>
+        <td>276</td>
+      </tr>
+      <tr>
+        <td>193</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:27.743</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 07, 2022</td>
+        <td>Jul 04, 2023</td>
+        <td>270</td>
+      </tr>
+      <tr>
+        <td>193</td>
+        <td>Forbidden Fortress (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:26.228</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 07, 2022</td>
+        <td>Jul 04, 2023</td>
+        <td>270</td>
+      </tr>
+      <tr>
+        <td>193</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP in Time Trial</td>
+        <td>0:12.896</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>Jan 28, 2021</td>
+        <td>Oct 25, 2021</td>
+        <td>270</td>
+      </tr>
+      <tr>
+        <td>196</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:16.574</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 11, 2019</td>
+        <td>Sep 05, 2020</td>
+        <td>269</td>
+      </tr>
+      <tr>
+        <td>197</td>
+        <td>Forbidden Fortress (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:26.000</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>Jul 04, 2023</td>
+        <td>Mar 26, 2024</td>
+        <td>266</td>
+      </tr>
+      <tr>
+        <td>198</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:23.882</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Feb 03, 2021</td>
+        <td>Oct 25, 2021</td>
+        <td>264</td>
+      </tr>
+      <tr>
+        <td>198</td>
+        <td>Boathouse Bay (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:22.333</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Feb 03, 2021</td>
+        <td>Oct 25, 2021</td>
+        <td>264</td>
+      </tr>
+      <tr>
+        <td>198</td>
+        <td>Great Dragon Road (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:20.849</td>
+        <td><span style="color:#e77471">Clexxer</span></td>
+        <td>Nov 18, 2020</td>
+        <td>Aug 09, 2021</td>
+        <td>264</td>
+      </tr>
+      <tr>
+        <td>201</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:23.589</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Feb 17, 2021</td>
+        <td>Nov 07, 2021</td>
+        <td>263</td>
+      </tr>
+      <tr>
+        <td>202</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:27.882</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 25, 2019</td>
+        <td>Aug 10, 2020</td>
+        <td>259</td>
+      </tr>
+      <tr>
+        <td>203</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:29.286</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 24, 2019</td>
+        <td>Aug 08, 2020</td>
+        <td>258</td>
+      </tr>
+      <tr>
+        <td>203</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:30.638</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 26, 2019</td>
+        <td>Aug 10, 2020</td>
+        <td>258</td>
+      </tr>
+      <tr>
+        <td>203</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:29.682</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 26, 2019</td>
+        <td>Aug 10, 2020</td>
+        <td>258</td>
+      </tr>
+      <tr>
+        <td>203</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:18.417</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 25, 2019</td>
+        <td>Aug 09, 2020</td>
+        <td>258</td>
+      </tr>
+      <tr>
+        <td>207</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP in Time Trial</td>
+        <td>0:12.964</td>
+        <td><span style="color:#8ac951">Safon</span></td>
+        <td>Feb 03, 2020</td>
+        <td>Oct 15, 2020</td>
+        <td>255</td>
+      </tr>
+      <tr>
+        <td>208</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Time Trial</td>
+        <td>0:16.701</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 27, 2019</td>
+        <td>Aug 07, 2020</td>
+        <td>254</td>
+      </tr>
+      <tr>
+        <td>209</td>
+        <td>Forbidden Fortress (Shortcut) 200 HP in Time Trial</td>
+        <td>0:13.241</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>Feb 18, 2021</td>
+        <td>Oct 27, 2021</td>
+        <td>251</td>
+      </tr>
+      <tr>
+        <td>210</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:16.567</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Feb 17, 2021</td>
+        <td>Oct 25, 2021</td>
+        <td>250</td>
+      </tr>
+      <tr>
+        <td>211</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:22.324</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Dec 16, 2020</td>
+        <td>Aug 22, 2021</td>
+        <td>249</td>
+      </tr>
+      <tr>
+        <td>212</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:17.614</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 11, 2019</td>
+        <td>Aug 10, 2020</td>
+        <td>243</td>
+      </tr>
+      <tr>
+        <td>213</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Time Trial</td>
+        <td>0:35.944</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 11, 2019</td>
+        <td>Aug 08, 2020</td>
+        <td>241</td>
+      </tr>
+      <tr>
+        <td>214</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Time Trial</td>
+        <td>0:29.579</td>
+        <td><span style="color:#ee4444">LuckyLuca593</span></td>
+        <td>May 06, 2021</td>
+        <td>Dec 23, 2021</td>
+        <td>231</td>
+      </tr>
+      <tr>
+        <td>215</td>
+        <td>Lighthouse Loop (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:34.042</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 17, 2020</td>
+        <td>Jun 03, 2021</td>
+        <td>229</td>
+      </tr>
+      <tr>
+        <td>216</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:37.198</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 17, 2020</td>
+        <td>Jun 02, 2021</td>
+        <td>228</td>
+      </tr>
+      <tr>
+        <td>217</td>
+        <td>Aviator Ranch (Shortcut) 300 HP in Pro Race</td>
+        <td>1:18.602</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 14, 2021</td>
+        <td>Oct 22, 2021</td>
+        <td>222</td>
+      </tr>
+      <tr>
+        <td>218</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:36.941</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 02, 2021</td>
+        <td>Jan 07, 2022</td>
+        <td>219</td>
+      </tr>
+      <tr>
+        <td>219</td>
+        <td>Twisted Canyon (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:37.174</td>
+        <td><span style="color:#44bbee">NovelMacaroon92</span></td>
+        <td>Mar 06, 2022</td>
+        <td>Oct 06, 2022</td>
+        <td>214</td>
+      </tr>
+      <tr>
+        <td>219</td>
+        <td>Twisted Canyon (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:36.556</td>
+        <td><span style="color:#44bbee">NovelMacaroon92</span></td>
+        <td>Mar 06, 2022</td>
+        <td>Oct 06, 2022</td>
+        <td>214</td>
+      </tr>
+      <tr>
+        <td>221</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:25.876</td>
+        <td><span style="color:#f0c03e">WickedWill944</span></td>
+        <td>Feb 08, 2021</td>
+        <td>Aug 31, 2021</td>
+        <td>204</td>
+      </tr>
+      <tr>
+        <td>222</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:24.661</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Dec 23, 2021</td>
+        <td>203</td>
+      </tr>
+      <tr>
+        <td>223</td>
+        <td>Twisted Canyon (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:36.851</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 18, 2021</td>
+        <td>Mar 06, 2022</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>224</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:38.581</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Apr 13, 2021</td>
+        <td>Oct 26, 2021</td>
+        <td>196</td>
+      </tr>
+      <tr>
+        <td>225</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Pro Race</td>
+        <td>1:21.367</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Dec 02, 2022</td>
+        <td>Jun 15, 2023</td>
+        <td>195</td>
+      </tr>
+      <tr>
+        <td>225</td>
+        <td>Forbidden Fortress (Shortcut) 200 HP in Pro Race</td>
+        <td>1:13.313</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Dec 02, 2022</td>
+        <td>Jun 15, 2023</td>
+        <td>195</td>
+      </tr>
+      <tr>
+        <td>227</td>
+        <td>Forbidden Fortress (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>2:41.328</td>
+        <td><span style="color:#ff3091">IohannXDXDXD</span></td>
+        <td>Sep 24, 2023</td>
+        <td>Apr 04, 2024</td>
+        <td>193</td>
+      </tr>
+      <tr>
+        <td>228</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:24.664</td>
+        <td><span style="color:#ff3091">Eloh03</span></td>
+        <td>Feb 10, 2024</td>
+        <td>Aug 16, 2024</td>
+        <td>188</td>
+      </tr>
+      <tr>
+        <td>229</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:26.138</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Dec 06, 2021</td>
+        <td>186</td>
+      </tr>
+      <tr>
+        <td>230</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Time Trial</td>
+        <td>0:14.005</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>May 04, 2021</td>
+        <td>Oct 29, 2021</td>
+        <td>178</td>
+      </tr>
+      <tr>
+        <td>231</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:36.384</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 21, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45371"></td>
+      </tr>
+      <tr>
+        <td>232</td>
+        <td>Aviator Ranch (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:22.862</td>
+        <td><span style="color:#f0c03e">Krrly</span></td>
+        <td>Mar 22, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45372"></td>
+      </tr>
+      <tr>
+        <td>232</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:16.267</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 22, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45372"></td>
+      </tr>
+      <tr>
+        <td>234</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:22.125</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 23, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45373"></td>
+      </tr>
+      <tr>
+        <td>235</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Time Trial</td>
+        <td>0:13.982</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>Mar 24, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45374"></td>
+      </tr>
+      <tr>
+        <td>235</td>
+        <td>Gold Rush Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:51.549</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 24, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45374"></td>
+      </tr>
+      <tr>
+        <td>235</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:15.248</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 24, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45374"></td>
+      </tr>
+      <tr>
+        <td>238</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>2:37.258</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>May 28, 2021</td>
+        <td>Oct 23, 2021</td>
+        <td>148</td>
+      </tr>
+      <tr>
+        <td>238</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:25.751</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 25, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45375"></td>
+      </tr>
+      <tr>
+        <td>240</td>
+        <td>Forbidden Fortress (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:24.997</td>
+        <td><span style="color:#f0c03e">Krrly</span></td>
+        <td>Mar 26, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45376"></td>
+      </tr>
+      <tr>
+        <td>241</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>2:21.773</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 01, 2021</td>
+        <td>Oct 25, 2021</td>
+        <td>146</td>
+      </tr>
+      <tr>
+        <td>241</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:37.837</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 27, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45377"></td>
+      </tr>
+      <tr>
+        <td>241</td>
+        <td>Cannon Crossover (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:32.642</td>
+        <td><span style="color:#f0c03e">Krrly</span></td>
+        <td>Mar 27, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45377"></td>
+      </tr>
+      <tr>
+        <td>241</td>
+        <td>Twisted Canyon (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:37.898</td>
+        <td><span style="color:#ee4444">Lew</span></td>
+        <td>Jun 05, 2021</td>
+        <td>Oct 29, 2021</td>
+        <td>146</td>
+      </tr>
+      <tr>
+        <td>245</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>1:36.424</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 01, 2021</td>
+        <td>Oct 23, 2021</td>
+        <td>144</td>
+      </tr>
+      <tr>
+        <td>245</td>
+        <td>Aviator Ranch (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>2:00.570</td>
+        <td><span style="color:#f0c03e">Krrly</span></td>
+        <td>Mar 29, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45379"></td>
+      </tr>
+      <tr>
+        <td>245</td>
+        <td>Lighthouse Loop (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:33.598</td>
+        <td><span style="color:#f0c03e">BlankFA</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Oct 25, 2021</td>
+        <td>144</td>
+      </tr>
+      <tr>
+        <td>248</td>
+        <td>Boathouse Bay (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:21.399</td>
+        <td><span style="color:#f0c03e">Krrly</span></td>
+        <td>Mar 30, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45380"></td>
+      </tr>
+      <tr>
+        <td>248</td>
+        <td>Cannon Crossover (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:37.133</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Nov 20, 2020</td>
+        <td>Apr 12, 2021</td>
+        <td>143</td>
+      </tr>
+      <tr>
+        <td>248</td>
+        <td>Lighthouse Loop (Shortcut) 300 HP in Time Trial</td>
+        <td>0:25.747</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Mar 30, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45380"></td>
+      </tr>
+      <tr>
+        <td>251</td>
+        <td>Aviator Ranch (Shortcut) 100 HP in Time Trial</td>
+        <td>0:16.872</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Apr 01, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45382"></td>
+      </tr>
+      <tr>
+        <td>251</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:23.491</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Apr 01, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45382"></td>
+      </tr>
+      <tr>
+        <td>251</td>
+        <td>Cannon Crossover (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:36.482</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Apr 01, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45382"></td>
+      </tr>
+      <tr>
+        <td>251</td>
+        <td>Great Dragon Road (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:20.462</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Apr 01, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45382"></td>
+      </tr>
+      <tr>
+        <td>251</td>
+        <td>Lighthouse Loop (Shortcut) 100 HP in Time Trial</td>
+        <td>0:28.420</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Apr 01, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45382"></td>
+      </tr>
+      <tr>
+        <td>251</td>
+        <td>Lighthouse Loop (Shortcut) 200 HP in Time Trial</td>
+        <td>0:27.266</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Apr 01, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45382"></td>
+      </tr>
+      <tr>
+        <td>257</td>
+        <td>Great Dragon Road (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:18.089</td>
+        <td><span style="color:#f0c03e">Krrly</span></td>
+        <td>Apr 03, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45384"></td>
+      </tr>
+      <tr>
+        <td>258</td>
+        <td>Forbidden Fortress (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>2:37.745</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>Apr 04, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45385"></td>
+      </tr>
+      <tr>
+        <td>258</td>
+        <td>Great Dragon Road (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:18.824</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 12, 2020</td>
+        <td>Mar 30, 2021</td>
+        <td>138</td>
+      </tr>
+      <tr>
+        <td>258</td>
+        <td>Lighthouse Loop (Shortcut) 100 HP in Time Trial</td>
+        <td>0:28.470</td>
+        <td><span style="color:#e77471">Clexxer</span></td>
+        <td>Nov 16, 2020</td>
+        <td>Apr 03, 2021</td>
+        <td>138</td>
+      </tr>
+      <tr>
+        <td>261</td>
+        <td>Forbidden Fortress (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:32.158</td>
+        <td><span style="color:#b8b8b8">MrSpaghetti</span></td>
+        <td>Apr 15, 2021</td>
+        <td>Aug 27, 2021</td>
+        <td>134</td>
+      </tr>
+      <tr>
+        <td>262</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:22.224</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 21, 2021</td>
+        <td>Mar 03, 2022</td>
+        <td>133</td>
+      </tr>
+      <tr>
+        <td>263</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>1:29.003</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 03, 2021</td>
+        <td>Sep 10, 2021</td>
+        <td>130</td>
+      </tr>
+      <tr>
+        <td>264</td>
+        <td>Twisted Canyon (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:37.624</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 29, 2021</td>
+        <td>Mar 06, 2022</td>
+        <td>128</td>
+      </tr>
+      <tr>
+        <td>265</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:17.261</td>
+        <td><span style="color:#ff3091">BroskiRacing</span></td>
+        <td>Aug 08, 2019</td>
+        <td>Dec 11, 2019</td>
+        <td>125</td>
+      </tr>
+      <tr>
+        <td>266</td>
+        <td>Boathouse Bay (Non-Shortcut) 300 HP in Battle Race</td>
+        <td>2:15.674</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 05, 2023</td>
+        <td>Nov 03, 2023</td>
+        <td>121</td>
+      </tr>
+      <tr>
+        <td>267</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>2:49.507</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>Sep 27, 2021</td>
+        <td>115</td>
+      </tr>
+      <tr>
+        <td>268</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:38.284</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 26, 2021</td>
+        <td>Feb 17, 2022</td>
+        <td>114</td>
+      </tr>
+      <tr>
+        <td>269</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Time Trial</td>
+        <td>0:14.038</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 12, 2020</td>
+        <td>Mar 05, 2021</td>
+        <td>113</td>
+      </tr>
+      <tr>
+        <td>270</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:26.174</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 17, 2020</td>
+        <td>Feb 03, 2021</td>
+        <td>109</td>
+      </tr>
+      <tr>
+        <td>270</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:19.271</td>
+        <td><span style="color:#ff3091">BroskiRacing</span></td>
+        <td>Aug 08, 2019</td>
+        <td>Nov 25, 2019</td>
+        <td>109</td>
+      </tr>
+      <tr>
+        <td>272</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Time Trial</td>
+        <td>0:22.294</td>
+        <td><span style="color:#ff3091">BroskiRacing</span></td>
+        <td>Aug 11, 2019</td>
+        <td>Nov 27, 2019</td>
+        <td>108</td>
+      </tr>
+      <tr>
+        <td>273</td>
+        <td>Aviator Ranch (Shortcut) 100 HP in Pro Race</td>
+        <td>1:38.973</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Feb 04, 2021</td>
+        <td>May 22, 2021</td>
+        <td>107</td>
+      </tr>
+      <tr>
+        <td>274</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:29.524</td>
+        <td><span style="color:#ff3091">BroskiRacing</span></td>
+        <td>Aug 11, 2019</td>
+        <td>Nov 24, 2019</td>
+        <td>105</td>
+      </tr>
+      <tr>
+        <td>274</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP in Time Trial</td>
+        <td>0:12.906</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 15, 2020</td>
+        <td>Jan 28, 2021</td>
+        <td>105</td>
+      </tr>
+      <tr>
+        <td>276</td>
+        <td>Forbidden Fortress (Shortcut) 200 HP in Pro Race</td>
+        <td>1:16.943</td>
+        <td><span style="color:#f0c03e">WickedWill944</span></td>
+        <td>Feb 03, 2021</td>
+        <td>May 18, 2021</td>
+        <td>104</td>
+      </tr>
+      <tr>
+        <td>276</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP in Pro Race</td>
+        <td>1:15.578</td>
+        <td><span style="color:#f0c03e">WickedWill944</span></td>
+        <td>Jan 27, 2021</td>
+        <td>May 11, 2021</td>
+        <td>104</td>
+      </tr>
+      <tr>
+        <td>276</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:16.806</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 05, 2020</td>
+        <td>Feb 17, 2021</td>
+        <td>104</td>
+      </tr>
+      <tr>
+        <td>279</td>
+        <td>Forbidden Fortress (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>2:52.157</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>May 26, 2021</td>
+        <td>Sep 05, 2021</td>
+        <td>102</td>
+      </tr>
+      <tr>
+        <td>280</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:23.605</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 09, 2020</td>
+        <td>Feb 17, 2021</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>281</td>
+        <td>Great Dragon Road (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>1:44.945</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 15, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45426"></td>
+      </tr>
+      <tr>
+        <td>281</td>
+        <td>Gold Rush Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:51.701</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 13, 2020</td>
+        <td>Feb 18, 2021</td>
+        <td>97</td>
+      </tr>
+      <tr>
+        <td>281</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:14.746</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 12, 2020</td>
+        <td>Feb 17, 2021</td>
+        <td>97</td>
+      </tr>
+      <tr>
+        <td>284</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>1:35.635</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>Sep 08, 2021</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <td>284</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>2:09.020</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 16, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45427"></td>
+      </tr>
+      <tr>
+        <td>284</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>2:08.414</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 16, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45427"></td>
+      </tr>
+      <tr>
+        <td>284</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>2:24.419</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 16, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45427"></td>
+      </tr>
+      <tr>
+        <td>284</td>
+        <td>Forbidden Fortress (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>2:17.017</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 16, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45427"></td>
+      </tr>
+      <tr>
+        <td>284</td>
+        <td>Great Dragon Road (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>1:57.299</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 16, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45427"></td>
+      </tr>
+      <tr>
+        <td>284</td>
+        <td>Lighthouse Loop (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>3:01.622</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 16, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45427"></td>
+      </tr>
+      <tr>
+        <td>291</td>
+        <td>Cannon Crossover (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>3:11.679</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 17, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45428"></td>
+      </tr>
+      <tr>
+        <td>291</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>4:04.047</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 17, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45428"></td>
+      </tr>
+      <tr>
+        <td>291</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>1:25.823</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 17, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45428"></td>
+      </tr>
+      <tr>
+        <td>291</td>
+        <td>Forbidden Fortress (Shortcut) 200 HP in Time Trial</td>
+        <td>0:13.248</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 15, 2020</td>
+        <td>Feb 18, 2021</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <td>291</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Time Trial</td>
+        <td>0:30.099</td>
+        <td><span style="color:#ee4444">LuckyLuca593</span></td>
+        <td>Jan 30, 2021</td>
+        <td>May 05, 2021</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <td>291</td>
+        <td>Twisted Canyon (Shortcut) 200 HP in Time Trial</td>
+        <td>0:28.564</td>
+        <td><span style="color:#ee4444">LuckyLuca593</span></td>
+        <td>Jan 30, 2021</td>
+        <td>May 05, 2021</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <td>297</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:16.050</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 16, 2020</td>
+        <td>Feb 17, 2021</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <td>298</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:39.530</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 03, 2020</td>
+        <td>Feb 03, 2021</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <td>299</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:13.961</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 21, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45432"></td>
+      </tr>
+      <tr>
+        <td>300</td>
+        <td>Lighthouse Loop (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:34.840</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 22, 2024</td>
+        <td>Jun 20, 2024</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>301</td>
+        <td>Aviator Ranch (Shortcut) 100 HP in Time Trial</td>
+        <td>0:17.777</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 03, 2020</td>
+        <td>Jan 30, 2021</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <td>301</td>
+        <td>Twisted Canyon (Shortcut) 300 HP in Time Trial</td>
+        <td>0:29.165</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 05, 2020</td>
+        <td>Jan 01, 2021</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <td>303</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>3:51.789</td>
+        <td><span style="color:#8ac951">Bikerbabo16</span></td>
+        <td>Jan 10, 2023</td>
+        <td>Apr 07, 2023</td>
+        <td>87</td>
+      </tr>
+      <tr>
+        <td>304</td>
+        <td>Aviator Ranch (Shortcut) 100 HP in Time Trial</td>
+        <td>0:18.336</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 10, 2020</td>
+        <td>Nov 03, 2020</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <td>304</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:39.765</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 10, 2020</td>
+        <td>Nov 03, 2020</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <td>306</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>2:13.924</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>May 06, 2023</td>
+        <td>Jul 29, 2023</td>
+        <td>84</td>
+      </tr>
+      <tr>
+        <td>306</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>4:11.598</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>Dec 15, 2022</td>
+        <td>Mar 09, 2023</td>
+        <td>84</td>
+      </tr>
+      <tr>
+        <td>308</td>
+        <td>Lighthouse Loop (Shortcut) 200 HP in Time Trial</td>
+        <td>0:27.288</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Jan 11, 2021</td>
+        <td>Apr 03, 2021</td>
+        <td>82</td>
+      </tr>
+      <tr>
+        <td>308</td>
+        <td>Lighthouse Loop (Shortcut) 300 HP in Time Trial</td>
+        <td>0:25.789</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Jan 11, 2021</td>
+        <td>Apr 03, 2021</td>
+        <td>82</td>
+      </tr>
+      <tr>
+        <td>310</td>
+        <td>Forbidden Fortress (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>2:42.293</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 01, 2023</td>
+        <td>Sep 20, 2023</td>
+        <td>81</td>
+      </tr>
+      <tr>
+        <td>311</td>
+        <td>Twisted Canyon (Shortcut) 300 HP in Battle Race</td>
+        <td>2:56.395</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 11, 2022</td>
+        <td>Sep 29, 2022</td>
+        <td>80</td>
+      </tr>
+      <tr>
+        <td>312</td>
+        <td>Boathouse Bay (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:22.371</td>
+        <td><span style="color:#e77471">Clexxer</span></td>
+        <td>Nov 16, 2020</td>
+        <td>Feb 03, 2021</td>
+        <td>79</td>
+      </tr>
+      <tr>
+        <td>313</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>1:37.089</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Dec 02, 2020</td>
+        <td>Feb 17, 2021</td>
+        <td>77</td>
+      </tr>
+      <tr>
+        <td>313</td>
+        <td>Aviator Ranch (Shortcut) 200 HP in Time Trial</td>
+        <td>0:17.143</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 14, 2020</td>
+        <td>Jan 30, 2021</td>
+        <td>77</td>
+      </tr>
+      <tr>
+        <td>313</td>
+        <td>Aviator Ranch (Shortcut) 300 HP in Time Trial</td>
+        <td>0:11.318</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 04, 2020</td>
+        <td>Feb 19, 2021</td>
+        <td>77</td>
+      </tr>
+      <tr>
+        <td>313</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:23.927</td>
+        <td><span style="color:#e77471">Clexxer</span></td>
+        <td>Nov 18, 2020</td>
+        <td>Feb 03, 2021</td>
+        <td>77</td>
+      </tr>
+      <tr>
+        <td>317</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>2:38.924</td>
+        <td><span style="color:#f0c03e">WickedWill944</span></td>
+        <td>Jun 21, 2021</td>
+        <td>Sep 05, 2021</td>
+        <td>76</td>
+      </tr>
+      <tr>
+        <td>317</td>
+        <td>Forbidden Fortress (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>2:35.686</td>
+        <td><span style="color:#f0c03e">WickedWill944</span></td>
+        <td>Jun 21, 2021</td>
+        <td>Sep 05, 2021</td>
+        <td>76</td>
+      </tr>
+      <tr>
+        <td>319</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>1:36.934</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Feb 17, 2021</td>
+        <td>May 03, 2021</td>
+        <td>75</td>
+      </tr>
+      <tr>
+        <td>319</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>1:29.308</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Feb 17, 2021</td>
+        <td>May 03, 2021</td>
+        <td>75</td>
+      </tr>
+      <tr>
+        <td>319</td>
+        <td>Great Dragon Road (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:21.745</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Sep 04, 2020</td>
+        <td>Nov 18, 2020</td>
+        <td>75</td>
+      </tr>
+      <tr>
+        <td>319</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:47.785</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Jun 05, 2024</td>
+        <td>Aug 19, 2024</td>
+        <td>75</td>
+      </tr>
+      <tr>
+        <td>319</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:42.548</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Jun 06, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45448"></td>
+      </tr>
+      <tr>
+        <td>324</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP in Battle Race</td>
+        <td>1:23.392</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 11, 2022</td>
+        <td>Sep 23, 2022</td>
+        <td>74</td>
+      </tr>
+      <tr>
+        <td>324</td>
+        <td>Lighthouse Loop (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:32.533</td>
+        <td><span style="color:#f0c03e">Krrly</span></td>
+        <td>Mar 25, 2024</td>
+        <td>Jun 07, 2024</td>
+        <td>74</td>
+      </tr>
+      <tr>
+        <td>324</td>
+        <td>Lighthouse Loop (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:32.242</td>
+        <td><span style="color:#f0c03e">Krrly</span></td>
+        <td>Jun 07, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45449"></td>
+      </tr>
+      <tr>
+        <td>327</td>
+        <td>Twisted Canyon (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>3:23.986</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Jun 08, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45450"></td>
+      </tr>
+      <tr>
+        <td>327</td>
+        <td>Twisted Canyon (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>3:07.513</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Jun 08, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45450"></td>
+      </tr>
+      <tr>
+        <td>327</td>
+        <td>Twisted Canyon (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>2:57.650</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Jun 08, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45450"></td>
+      </tr>
+      <tr>
+        <td>327</td>
+        <td>Twisted Canyon (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:35.746</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Jun 08, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45450"></td>
+      </tr>
+      <tr>
+        <td>327</td>
+        <td>Twisted Canyon (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:34.523</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Jun 08, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45450"></td>
+      </tr>
+      <tr>
+        <td>327</td>
+        <td>Twisted Canyon (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:32.259</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Jun 08, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45450"></td>
+      </tr>
+      <tr>
+        <td>333</td>
+        <td>Forbidden Fortress (Shortcut) 200 HP in Time Trial</td>
+        <td>0:13.990</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Sep 04, 2020</td>
+        <td>Nov 15, 2020</td>
+        <td>72</td>
+      </tr>
+      <tr>
+        <td>334</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>2:16.166</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Dec 02, 2020</td>
+        <td>Feb 11, 2021</td>
+        <td>71</td>
+      </tr>
+      <tr>
+        <td>334</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>1:30.477</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Dec 08, 2020</td>
+        <td>Feb 17, 2021</td>
+        <td>71</td>
+      </tr>
+      <tr>
+        <td>334</td>
+        <td>Twisted Canyon (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>3:16.787</td>
+        <td><span style="color:#f0c03e">Krrly</span></td>
+        <td>Mar 29, 2024</td>
+        <td>Jun 08, 2024</td>
+        <td>71</td>
+      </tr>
+      <tr>
+        <td>334</td>
+        <td>Aviator Ranch (Shortcut) 200 HP in Time Trial</td>
+        <td>0:17.628</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Sep 04, 2020</td>
+        <td>Nov 14, 2020</td>
+        <td>71</td>
+      </tr>
+      <tr>
+        <td>334</td>
+        <td>Cannon Crossover (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:38.346</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Sep 04, 2020</td>
+        <td>Nov 14, 2020</td>
+        <td>71</td>
+      </tr>
+      <tr>
+        <td>334</td>
+        <td>Twisted Canyon (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:32.472</td>
+        <td><span style="color:#f0c03e">Krrly</span></td>
+        <td>Mar 29, 2024</td>
+        <td>Jun 08, 2024</td>
+        <td>71</td>
+      </tr>
+      <tr>
+        <td>340</td>
+        <td>Aviator Ranch (Shortcut) 300 HP in Time Trial</td>
+        <td>0:10.680</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Feb 19, 2021</td>
+        <td>Apr 30, 2021</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <td>340</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:15.866</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Feb 17, 2021</td>
+        <td>Apr 28, 2021</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <td>340</td>
+        <td>Twisted Canyon (Shortcut) 300 HP in Time Trial</td>
+        <td>0:30.418</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jul 02, 2020</td>
+        <td>Sep 10, 2020</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <td>343</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:38.753</td>
+        <td><span style="color:#f0c03e">WickedWill944</span></td>
+        <td>Feb 03, 2021</td>
+        <td>Apr 13, 2021</td>
+        <td>69</td>
+      </tr>
+      <tr>
+        <td>344</td>
+        <td>Badlands Motorplex (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:25.089</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Aug 10, 2020</td>
+        <td>Oct 17, 2020</td>
+        <td>68</td>
+      </tr>
+      <tr>
+        <td>345</td>
+        <td>Aviator Ranch (Shortcut) 100 HP in Pro Race</td>
+        <td>2:10.298</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 28, 2020</td>
+        <td>Feb 03, 2021</td>
+        <td>67</td>
+      </tr>
+      <tr>
+        <td>345</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:30.214</td>
+        <td><span style="color:#f0c03e">WickedWill944</span></td>
+        <td>Jun 21, 2021</td>
+        <td>Aug 27, 2021</td>
+        <td>67</td>
+      </tr>
+      <tr>
+        <td>345</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:19.932</td>
+        <td><span style="color:#ff3091">BroskiRacing</span></td>
+        <td>May 28, 2019</td>
+        <td>Aug 03, 2019</td>
+        <td>67</td>
+      </tr>
+      <tr>
+        <td>345</td>
+        <td>Twisted Canyon (Shortcut) 200 HP in Time Trial</td>
+        <td>0:31.140</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Sep 04, 2020</td>
+        <td>Nov 10, 2020</td>
+        <td>67</td>
+      </tr>
+      <tr>
+        <td>349</td>
+        <td>Aviator Ranch (Shortcut) 200 HP in Pro Race</td>
+        <td>2:12.838</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 29, 2020</td>
+        <td>Feb 03, 2021</td>
+        <td>66</td>
+      </tr>
+      <tr>
+        <td>349</td>
+        <td>Forbidden Fortress (Shortcut) 200 HP in Pro Race</td>
+        <td>1:18.132</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 29, 2020</td>
+        <td>Feb 03, 2021</td>
+        <td>66</td>
+      </tr>
+      <tr>
+        <td>349</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Time Trial</td>
+        <td>0:14.677</td>
+        <td><span style="color:#ee4444">Vuxla</span></td>
+        <td>Aug 10, 2020</td>
+        <td>Oct 15, 2020</td>
+        <td>66</td>
+      </tr>
+      <tr>
+        <td>352</td>
+        <td>Lighthouse Loop (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:35.415</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jul 02, 2020</td>
+        <td>Sep 04, 2020</td>
+        <td>64</td>
+      </tr>
+      <tr>
+        <td>352</td>
+        <td>Twisted Canyon (Shortcut) 200 HP in Time Trial</td>
+        <td>0:32.761</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jul 02, 2020</td>
+        <td>Sep 04, 2020</td>
+        <td>64</td>
+      </tr>
+      <tr>
+        <td>354</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Pro Race</td>
+        <td>1:28.875</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 28, 2020</td>
+        <td>Jan 30, 2021</td>
+        <td>63</td>
+      </tr>
+      <tr>
+        <td>355</td>
+        <td>Lighthouse Loop (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:34.630</td>
+        <td><span style="color:#f0c03e">Krrly</span></td>
+        <td>Jun 20, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45462"></td>
+      </tr>
+      <tr>
+        <td>355</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:17.712</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Sep 04, 2020</td>
+        <td>Nov 04, 2020</td>
+        <td>61</td>
+      </tr>
+      <tr>
+        <td>357</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>2:14.474</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>May 06, 2023</td>
+        <td>Jul 05, 2023</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>357</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Pro Race</td>
+        <td>1:24.691</td>
+        <td><span style="color:#f0c03e">WickedWill944</span></td>
+        <td>Jan 30, 2021</td>
+        <td>Mar 31, 2021</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>357</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:25.591</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 06, 2022</td>
+        <td>Dec 05, 2022</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>357</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Time Trial</td>
+        <td>0:14.009</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>Mar 05, 2021</td>
+        <td>May 04, 2021</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>357</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:22.257</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 22, 2021</td>
+        <td>Oct 21, 2021</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>357</td>
+        <td>Gold Rush Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:52.300</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Sep 05, 2020</td>
+        <td>Nov 04, 2020</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>357</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:46.407</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Sep 05, 2020</td>
+        <td>Nov 04, 2020</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>364</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP in Time Trial</td>
+        <td>0:12.571</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 25, 2021</td>
+        <td>Dec 23, 2021</td>
+        <td>59</td>
+      </tr>
+      <tr>
+        <td>364</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:49.796</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Sep 06, 2020</td>
+        <td>Nov 04, 2020</td>
+        <td>59</td>
+      </tr>
+      <tr>
+        <td>366</td>
+        <td>Forbidden Fortress (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:32.179</td>
+        <td><span style="color:#f0c03e">WickedWill944</span></td>
+        <td>Jun 21, 2021</td>
+        <td>Aug 18, 2021</td>
+        <td>58</td>
+      </tr>
+      <tr>
+        <td>366</td>
+        <td>Forbidden Fortress (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:29.747</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>Aug 26, 2021</td>
+        <td>Oct 23, 2021</td>
+        <td>58</td>
+      </tr>
+      <tr>
+        <td>366</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Time Trial</td>
+        <td>0:33.165</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 08, 2020</td>
+        <td>Oct 05, 2020</td>
+        <td>58</td>
+      </tr>
+      <tr>
+        <td>369</td>
+        <td>Forbidden Fortress (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:26.711</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>Aug 27, 2021</td>
+        <td>Oct 23, 2021</td>
+        <td>57</td>
+      </tr>
+      <tr>
+        <td>370</td>
+        <td>Aviator Ranch (Shortcut) 300 HP in Pro Race</td>
+        <td>1:23.351</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 03, 2020</td>
+        <td>Jan 28, 2021</td>
+        <td>56</td>
+      </tr>
+      <tr>
+        <td>370</td>
+        <td>Gold Rush Road (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>5:25.720</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 28, 2020</td>
+        <td>Jan 23, 2021</td>
+        <td>56</td>
+      </tr>
+      <tr>
+        <td>370</td>
+        <td>Lighthouse Loop (Shortcut) 200 HP in Time Trial</td>
+        <td>0:27.479</td>
+        <td><span style="color:#e77471">Clexxer</span></td>
+        <td>Nov 16, 2020</td>
+        <td>Jan 11, 2021</td>
+        <td>56</td>
+      </tr>
+      <tr>
+        <td>370</td>
+        <td>Lighthouse Loop (Shortcut) 300 HP in Time Trial</td>
+        <td>0:25.814</td>
+        <td><span style="color:#e77471">Clexxer</span></td>
+        <td>Nov 16, 2020</td>
+        <td>Jan 11, 2021</td>
+        <td>56</td>
+      </tr>
+      <tr>
+        <td>370</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:14.069</td>
+        <td><span style="color:#f0c03e">Krrly</span></td>
+        <td>Mar 26, 2024</td>
+        <td>May 21, 2024</td>
+        <td>56</td>
+      </tr>
+      <tr>
+        <td>375</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Pro Race</td>
+        <td>3:04.233</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 28, 2020</td>
+        <td>Jan 21, 2021</td>
+        <td>54</td>
+      </tr>
+      <tr>
+        <td>376</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>1:34.910</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>May 07, 2023</td>
+        <td>Jun 28, 2023</td>
+        <td>52</td>
+      </tr>
+      <tr>
+        <td>376</td>
+        <td>Twisted Canyon (Shortcut) 200 HP in Pro Race</td>
+        <td>2:48.079</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 29, 2020</td>
+        <td>Jan 20, 2021</td>
+        <td>52</td>
+      </tr>
+      <tr>
+        <td>376</td>
+        <td>Twisted Canyon (Shortcut) 300 HP in Pro Race</td>
+        <td>2:38.552</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 02, 2020</td>
+        <td>Jan 23, 2021</td>
+        <td>52</td>
+      </tr>
+      <tr>
+        <td>379</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:40.663</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Apr 15, 2024</td>
+        <td>Jun 05, 2024</td>
+        <td>51</td>
+      </tr>
+      <tr>
+        <td>380</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Pro Race</td>
+        <td>1:23.455</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 31, 2021</td>
+        <td>May 18, 2021</td>
+        <td>48</td>
+      </tr>
+      <tr>
+        <td>380</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:25.364</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 05, 2020</td>
+        <td>Dec 23, 2020</td>
+        <td>48</td>
+      </tr>
+      <tr>
+        <td>382</td>
+        <td>Great Dragon Road (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>1:48.214</td>
+        <td><span style="color:#f0c03e">Krrly</span></td>
+        <td>Mar 29, 2024</td>
+        <td>May 15, 2024</td>
+        <td>47</td>
+      </tr>
+      <tr>
+        <td>383</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:38.872</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 25, 2020</td>
+        <td>Aug 09, 2020</td>
+        <td>45</td>
+      </tr>
+      <tr>
+        <td>383</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Time Trial</td>
+        <td>0:32.791</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 05, 2020</td>
+        <td>Nov 19, 2020</td>
+        <td>45</td>
+      </tr>
+      <tr>
+        <td>383</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Time Trial</td>
+        <td>0:32.545</td>
+        <td><span style="color:#e77471">Clexxer</span></td>
+        <td>Nov 19, 2020</td>
+        <td>Jan 03, 2021</td>
+        <td>45</td>
+      </tr>
+      <tr>
+        <td>383</td>
+        <td>Twisted Canyon (Shortcut) 200 HP in Time Trial</td>
+        <td>0:30.531</td>
+        <td><span style="color:#e77471">Clexxer</span></td>
+        <td>Nov 19, 2020</td>
+        <td>Jan 03, 2021</td>
+        <td>45</td>
+      </tr>
+      <tr>
+        <td>387</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:43.100</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 25, 2020</td>
+        <td>Aug 08, 2020</td>
+        <td>44</td>
+      </tr>
+      <tr>
+        <td>388</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:25.968</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Sep 05, 2020</td>
+        <td>Oct 18, 2020</td>
+        <td>43</td>
+      </tr>
+      <tr>
+        <td>388</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:25.460</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Sep 05, 2020</td>
+        <td>Oct 18, 2020</td>
+        <td>43</td>
+      </tr>
+      <tr>
+        <td>390</td>
+        <td>Forbidden Fortress (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>2:17.213</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>Apr 04, 2024</td>
+        <td>May 16, 2024</td>
+        <td>42</td>
+      </tr>
+      <tr>
+        <td>390</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:26.498</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Sep 05, 2020</td>
+        <td>Oct 17, 2020</td>
+        <td>42</td>
+      </tr>
+      <tr>
+        <td>390</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:25.353</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Sep 05, 2020</td>
+        <td>Oct 17, 2020</td>
+        <td>42</td>
+      </tr>
+      <tr>
+        <td>390</td>
+        <td>Cannon Crossover (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:37.801</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Sep 05, 2020</td>
+        <td>Oct 17, 2020</td>
+        <td>42</td>
+      </tr>
+      <tr>
+        <td>390</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:22.917</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 05, 2020</td>
+        <td>Nov 16, 2020</td>
+        <td>42</td>
+      </tr>
+      <tr>
+        <td>395</td>
+        <td>Aviator Ranch (Shortcut) 300 HP in Pro Race</td>
+        <td>1:20.447</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Feb 03, 2021</td>
+        <td>Mar 14, 2021</td>
+        <td>39</td>
+      </tr>
+      <tr>
+        <td>395</td>
+        <td>Gold Rush Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>1:2.148</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jul 01, 2020</td>
+        <td>Aug 09, 2020</td>
+        <td>39</td>
+      </tr>
+      <tr>
+        <td>395</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:45.310</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Nov 27, 2020</td>
+        <td>Jan 05, 2021</td>
+        <td>39</td>
+      </tr>
+      <tr>
+        <td>398</td>
+        <td>Great Dragon Road (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:18.948</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 05, 2020</td>
+        <td>Nov 12, 2020</td>
+        <td>38</td>
+      </tr>
+      <tr>
+        <td>399</td>
+        <td>Cannon Crossover (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>3:23.817</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>May 31, 2023</td>
+        <td>Jul 07, 2023</td>
+        <td>37</td>
+      </tr>
+      <tr>
+        <td>399</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:31.815</td>
+        <td><span style="color:#b8b8b8">MrSpaghetti</span></td>
+        <td>Apr 27, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>37</td>
+      </tr>
+      <tr>
+        <td>401</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:37.240</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Sep 11, 2020</td>
+        <td>Oct 17, 2020</td>
+        <td>36</td>
+      </tr>
+      <tr>
+        <td>402</td>
+        <td>Lighthouse Loop (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:35.855</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Sep 12, 2020</td>
+        <td>Oct 17, 2020</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <td>402</td>
+        <td>Lighthouse Loop (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:34.077</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Sep 12, 2020</td>
+        <td>Oct 17, 2020</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <td>404</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:37.322</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 09, 2020</td>
+        <td>Sep 11, 2020</td>
+        <td>33</td>
+      </tr>
+      <tr>
+        <td>405</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>4:17.609</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>Jun 01, 2023</td>
+        <td>Jul 03, 2023</td>
+        <td>32</td>
+      </tr>
+      <tr>
+        <td>406</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>2:14.835</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>Jun 01, 2023</td>
+        <td>Jul 02, 2023</td>
+        <td>31</td>
+      </tr>
+      <tr>
+        <td>406</td>
+        <td>Aviator Ranch (Shortcut) 300 HP in Time Trial</td>
+        <td>0:15.985</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 03, 2020</td>
+        <td>Dec 04, 2020</td>
+        <td>31</td>
+      </tr>
+      <tr>
+        <td>408</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:28.221</td>
+        <td><span style="color:#c279e5">TacticalF28</span></td>
+        <td>Aug 27, 2021</td>
+        <td>Sep 26, 2021</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>408</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:16.363</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Sep 05, 2020</td>
+        <td>Oct 05, 2020</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>408</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:15.883</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 05, 2020</td>
+        <td>Nov 04, 2020</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>411</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:16.859</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Sep 06, 2020</td>
+        <td>Oct 05, 2020</td>
+        <td>29</td>
+      </tr>
+      <tr>
+        <td>411</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:16.856</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 05, 2020</td>
+        <td>Nov 03, 2020</td>
+        <td>29</td>
+      </tr>
+      <tr>
+        <td>413</td>
+        <td>Cannon Crossover (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:36.420</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 18, 2020</td>
+        <td>Nov 15, 2020</td>
+        <td>28</td>
+      </tr>
+      <tr>
+        <td>413</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Time Trial</td>
+        <td>0:14.191</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 15, 2020</td>
+        <td>Nov 12, 2020</td>
+        <td>28</td>
+      </tr>
+      <tr>
+        <td>415</td>
+        <td>Lighthouse Loop (Shortcut) 100 HP in Time Trial</td>
+        <td>0:28.479</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 20, 2020</td>
+        <td>Nov 16, 2020</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>415</td>
+        <td>Lighthouse Loop (Shortcut) 200 HP in Time Trial</td>
+        <td>0:28.334</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 20, 2020</td>
+        <td>Nov 16, 2020</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>417</td>
+        <td>Forbidden Fortress (Non-Shortcut) 100 HP in Battle Race</td>
+        <td>2:49.910</td>
+        <td><span style="color:#b8b8b8">AB20</span></td>
+        <td>Sep 27, 2021</td>
+        <td>Oct 23, 2021</td>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>417</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>2:36.850</td>
+        <td><span style="color:#b8b8b8">AB20</span></td>
+        <td>Sep 27, 2021</td>
+        <td>Oct 23, 2021</td>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>417</td>
+        <td>Boathouse Bay (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>2:10.264</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jan 23, 2021</td>
+        <td>Feb 18, 2021</td>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>417</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:26.521</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 10, 2020</td>
+        <td>Sep 05, 2020</td>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>417</td>
+        <td>Gold Rush Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:55.714</td>
+        <td><span style="color:#ee4444">Vuxla</span></td>
+        <td>Aug 10, 2020</td>
+        <td>Sep 05, 2020</td>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>417</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:17.781</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 09, 2020</td>
+        <td>Sep 04, 2020</td>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>423</td>
+        <td>Gold Rush Road (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>4:31.328</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jan 23, 2021</td>
+        <td>Feb 17, 2021</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>423</td>
+        <td>Aviator Ranch (Shortcut) 200 HP in Time Trial</td>
+        <td>0:19.474</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Aug 10, 2020</td>
+        <td>Sep 04, 2020</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>423</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:27.102</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Aug 10, 2020</td>
+        <td>Sep 04, 2020</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>423</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:27.966</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Aug 10, 2020</td>
+        <td>Sep 04, 2020</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>423</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:26.793</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Aug 10, 2020</td>
+        <td>Sep 04, 2020</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>423</td>
+        <td>Cannon Crossover (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:40.134</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Aug 10, 2020</td>
+        <td>Sep 04, 2020</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>423</td>
+        <td>Forbidden Fortress (Shortcut) 200 HP in Time Trial</td>
+        <td>0:14.046</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Aug 10, 2020</td>
+        <td>Sep 04, 2020</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>423</td>
+        <td>Great Dragon Road (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:21.851</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Aug 10, 2020</td>
+        <td>Sep 04, 2020</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>423</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:52.871</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Aug 10, 2020</td>
+        <td>Sep 04, 2020</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>423</td>
+        <td>Lighthouse Loop (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:36.568</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Aug 10, 2020</td>
+        <td>Sep 04, 2020</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>423</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:17.265</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Aug 10, 2020</td>
+        <td>Sep 04, 2020</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>423</td>
+        <td>Twisted Canyon (Shortcut) 300 HP in Time Trial</td>
+        <td>0:30.325</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Sep 10, 2020</td>
+        <td>Oct 05, 2020</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>435</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>3:54.728</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>Dec 17, 2022</td>
+        <td>Jan 10, 2023</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>435</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:24.958</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 17, 2020</td>
+        <td>Nov 10, 2020</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>437</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP in Pro Race</td>
+        <td>1:17.374</td>
+        <td><span style="color:#f0c03e">WickedWill944</span></td>
+        <td>Dec 31, 2020</td>
+        <td>Jan 23, 2021</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>437</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:22.778</td>
+        <td><span style="color:#e77471">Clexxer</span></td>
+        <td>Nov 16, 2020</td>
+        <td>Dec 09, 2020</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>437</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:49.301</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 04, 2020</td>
+        <td>Nov 27, 2020</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>437</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:46.257</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 04, 2020</td>
+        <td>Nov 27, 2020</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>437</td>
+        <td>Twisted Canyon (Shortcut) 300 HP in Time Trial</td>
+        <td>0:26.941</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Jan 05, 2021</td>
+        <td>Jan 28, 2021</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>442</td>
+        <td>Boathouse Bay (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>2:14.263</td>
+        <td><span style="color:#f0c03e">WickedWill944</span></td>
+        <td>Jan 01, 2021</td>
+        <td>Jan 23, 2021</td>
+        <td>22</td>
+      </tr>
+      <tr>
+        <td>443</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>4:08.195</td>
+        <td><span style="color:#8ac951">Bikerbabo16</span></td>
+        <td>Mar 17, 2023</td>
+        <td>Apr 07, 2023</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <td>444</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Battle Race</td>
+        <td>2:54.309</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Jul 31, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45503"></td>
+      </tr>
+      <tr>
+        <td>445</td>
+        <td>Aviator Ranch (Shortcut) 100 HP in Time Trial</td>
+        <td>0:17.775</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Jan 30, 2021</td>
+        <td>Feb 18, 2021</td>
+        <td>19</td>
+      </tr>
+      <tr>
+        <td>446</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:25.944</td>
+        <td><span style="color:#6666ee">Some_Guy5</span></td>
+        <td>Dec 06, 2021</td>
+        <td>Dec 23, 2021</td>
+        <td>17</td>
+      </tr>
+      <tr>
+        <td>446</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:25.509</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Aug 03, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45506"></td>
+      </tr>
+      <tr>
+        <td>446</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:24.161</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Aug 03, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45506"></td>
+      </tr>
+      <tr>
+        <td>449</td>
+        <td>Forbidden Fortress (Shortcut) 200 HP in Pro Race</td>
+        <td>1:11.249</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 15, 2023</td>
+        <td>Jul 01, 2023</td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td>449</td>
+        <td>Gold Rush Road (Shortcut) 300 HP in Pro Race</td>
+        <td>3:43.865</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Aug 04, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45507"></td>
+      </tr>
+      <tr>
+        <td>449</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Pro Race</td>
+        <td>2:45.156</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Aug 04, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45507"></td>
+      </tr>
+      <tr>
+        <td>449</td>
+        <td>Twisted Canyon (Shortcut) 200 HP in Pro Race</td>
+        <td>2:32.338</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Aug 04, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45507"></td>
+      </tr>
+      <tr>
+        <td>449</td>
+        <td>Twisted Canyon (Shortcut) 300 HP in Pro Race</td>
+        <td>2:20.655</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Aug 04, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45507"></td>
+      </tr>
+      <tr>
+        <td>449</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Time Trial</td>
+        <td>0:30.797</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Jan 14, 2021</td>
+        <td>Jan 30, 2021</td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td>449</td>
+        <td>Twisted Canyon (Shortcut) 200 HP in Time Trial</td>
+        <td>0:28.774</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Jan 14, 2021</td>
+        <td>Jan 30, 2021</td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td>456</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Pro Race</td>
+        <td>1:19.283</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 15, 2023</td>
+        <td>Jun 30, 2023</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>456</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>4:06.732</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 02, 2020</td>
+        <td>Dec 17, 2020</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>456</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:25.461</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Oct 21, 2020</td>
+        <td>Nov 05, 2020</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>456</td>
+        <td>Badlands Motorplex (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:24.761</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Oct 21, 2020</td>
+        <td>Nov 05, 2020</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>460</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:25.285</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 21, 2020</td>
+        <td>Nov 04, 2020</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>460</td>
+        <td>Lighthouse Loop (Shortcut) 300 HP in Time Trial</td>
+        <td>0:26.926</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 20, 2020</td>
+        <td>Nov 03, 2020</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>462</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>2:26.793</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 28, 2020</td>
+        <td>Dec 11, 2020</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>462</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>3:37.621</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 28, 2020</td>
+        <td>Dec 11, 2020</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>462</td>
+        <td>Boathouse Bay (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:22.445</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 03, 2020</td>
+        <td>Nov 16, 2020</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>462</td>
+        <td>Lighthouse Loop (Shortcut) 300 HP in Time Trial</td>
+        <td>0:25.859</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 03, 2020</td>
+        <td>Nov 16, 2020</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>466</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>2:18.447</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 29, 2020</td>
+        <td>Dec 11, 2020</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>466</td>
+        <td>Cannon Crossover (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>3:20.363</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 29, 2020</td>
+        <td>Dec 11, 2020</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>468</td>
+        <td>Great Dragon Road (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:20.148</td>
+        <td><span style="color:#ff3091">BroskiRacing</span></td>
+        <td>May 28, 2019</td>
+        <td>Jun 08, 2019</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>468</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:16.479</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 05, 2020</td>
+        <td>Nov 16, 2020</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>468</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Time Trial</td>
+        <td>0:31.217</td>
+        <td><span style="color:#f0c03e">WickedWill944</span></td>
+        <td>Jan 03, 2021</td>
+        <td>Jan 14, 2021</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>468</td>
+        <td>Twisted Canyon (Shortcut) 200 HP in Time Trial</td>
+        <td>0:30.013</td>
+        <td><span style="color:#f0c03e">WickedWill944</span></td>
+        <td>Jan 03, 2021</td>
+        <td>Jan 14, 2021</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>472</td>
+        <td>Twisted Canyon (Shortcut) 200 HP in Pro Race</td>
+        <td>2:32.291</td>
+        <td><span style="color:#f0c03e">WickedWill944</span></td>
+        <td>Jan 20, 2021</td>
+        <td>Jan 30, 2021</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>472</td>
+        <td>Badlands Motorplex (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:21.674</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Aug 10, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45513"></td>
+      </tr>
+      <tr>
+        <td>474</td>
+        <td>Badlands Motorplex (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>2:09.183</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 02, 2020</td>
+        <td>Dec 11, 2020</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>474</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>1:31.280</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 29, 2020</td>
+        <td>Dec 08, 2020</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>474</td>
+        <td>Great Dragon Road (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:20.792</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 23, 2024</td>
+        <td>Apr 01, 2024</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>474</td>
+        <td>Gold Rush Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:52.009</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 04, 2020</td>
+        <td>Nov 13, 2020</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>474</td>
+        <td>Twisted Canyon (Shortcut) 200 HP in Time Trial</td>
+        <td>0:30.702</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 10, 2020</td>
+        <td>Nov 19, 2020</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>479</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:23.944</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 10, 2020</td>
+        <td>Nov 18, 2020</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>479</td>
+        <td>Cannon Crossover (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:36.617</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 24, 2024</td>
+        <td>Apr 01, 2024</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>479</td>
+        <td>Forbidden Fortress (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:29.858</td>
+        <td><span style="color:#ff3091">Eloh03</span></td>
+        <td>Aug 18, 2021</td>
+        <td>Aug 26, 2021</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>479</td>
+        <td>Lighthouse Loop (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:35.882</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Sep 04, 2020</td>
+        <td>Sep 12, 2020</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>479</td>
+        <td>Lighthouse Loop (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:34.738</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Sep 04, 2020</td>
+        <td>Sep 12, 2020</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>484</td>
+        <td>Forbidden Fortress (Shortcut) 200 HP in Pro Race</td>
+        <td>1:10.672</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 01, 2023</td>
+        <td>Jul 08, 2023</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>484</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP in Pro Race</td>
+        <td>1:10.389</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 11, 2021</td>
+        <td>May 18, 2021</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>484</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>4:09.816</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>Mar 10, 2023</td>
+        <td>Mar 17, 2023</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>484</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>3:23.856</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 28, 2020</td>
+        <td>Dec 05, 2020</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>484</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Pro Race</td>
+        <td>2:52.474</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jan 23, 2021</td>
+        <td>Jan 30, 2021</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>484</td>
+        <td>Aviator Ranch (Shortcut) 100 HP in Time Trial</td>
+        <td>0:16.947</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 25, 2024</td>
+        <td>Apr 01, 2024</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>484</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:23.745</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 25, 2024</td>
+        <td>Apr 01, 2024</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>484</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:24.692</td>
+        <td><span style="color:#ff3091">Eloh03</span></td>
+        <td>Feb 03, 2024</td>
+        <td>Feb 10, 2024</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>484</td>
+        <td>Great Dragon Road (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:18.526</td>
+        <td><span style="color:#f0c03e">Krrly</span></td>
+        <td>Mar 23, 2024</td>
+        <td>Mar 30, 2024</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>484</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:15.014</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 05, 2020</td>
+        <td>Nov 12, 2020</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>494</td>
+        <td>Aviator Ranch (Shortcut) 300 HP in Pro Race</td>
+        <td>1:21.938</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jan 28, 2021</td>
+        <td>Feb 03, 2021</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>494</td>
+        <td>Forbidden Fortress (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>2:18.300</td>
+        <td><span style="color:#f0c03e">Krrly</span></td>
+        <td>Mar 29, 2024</td>
+        <td>Apr 04, 2024</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>494</td>
+        <td>Great Dragon Road (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>2:50.661</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 02, 2020</td>
+        <td>Dec 08, 2020</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>497</td>
+        <td>Aviator Ranch (Shortcut) 200 HP in Time Trial</td>
+        <td>0:16.996</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Jan 30, 2021</td>
+        <td>Feb 04, 2021</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>497</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:25.892</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Feb 03, 2021</td>
+        <td>Feb 08, 2021</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>497</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:22.423</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Dec 11, 2020</td>
+        <td>Dec 16, 2020</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>497</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:19.604</td>
+        <td><span style="color:#e77471">Matthias</span></td>
+        <td>Aug 03, 2019</td>
+        <td>Aug 08, 2019</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>497</td>
+        <td>Twisted Canyon (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:33.366</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 24, 2024</td>
+        <td>Mar 29, 2024</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>502</td>
+        <td>Forbidden Fortress (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>2:42.272</td>
+        <td><span style="color:#ff3091">IohannXDXDXD</span></td>
+        <td>Sep 20, 2023</td>
+        <td>Sep 24, 2023</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>502</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP in Pro Race</td>
+        <td>1:15.707</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jan 23, 2021</td>
+        <td>Jan 27, 2021</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>502</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>2:18.567</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 28, 2020</td>
+        <td>Dec 02, 2020</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>502</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>1:38.445</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 28, 2020</td>
+        <td>Dec 02, 2020</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>502</td>
+        <td>Twisted Canyon (Shortcut) 300 HP in Pro Race</td>
+        <td>2:36.267</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jan 23, 2021</td>
+        <td>Jan 27, 2021</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>502</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:24.496</td>
+        <td><span style="color:#ee4444">AspectrzUK</span></td>
+        <td>Aug 16, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45519"></td>
+      </tr>
+      <tr>
+        <td>502</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:24.685</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 05, 2020</td>
+        <td>Nov 09, 2020</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>502</td>
+        <td>Badlands Motorplex (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:24.965</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 17, 2020</td>
+        <td>Oct 21, 2020</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>502</td>
+        <td>Badlands Motorplex (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:24.581</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 05, 2020</td>
+        <td>Nov 09, 2020</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>502</td>
+        <td>Cannon Crossover (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:37.276</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 16, 2020</td>
+        <td>Nov 20, 2020</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>502</td>
+        <td>Great Dragon Road (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:18.510</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Mar 30, 2024</td>
+        <td>Apr 03, 2024</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>513</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>2:19.165</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>May 29, 2023</td>
+        <td>Jun 01, 2023</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>513</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP in Pro Race</td>
+        <td>1:06.814</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 15, 2023</td>
+        <td>Jun 18, 2023</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>513</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>4:31.438</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 29, 2020</td>
+        <td>Dec 02, 2020</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>513</td>
+        <td>Twisted Canyon (Shortcut) 300 HP in Pro Race</td>
+        <td>2:29.812</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Jan 27, 2021</td>
+        <td>Jan 30, 2021</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>513</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:25.683</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 18, 2020</td>
+        <td>Oct 21, 2020</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>513</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:25.361</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 18, 2020</td>
+        <td>Oct 21, 2020</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>513</td>
+        <td>Badlands Motorplex (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:22.547</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 09, 2020</td>
+        <td>Nov 12, 2020</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>513</td>
+        <td>Gold Rush Road (Shortcut) 100 HP in Time Trial</td>
+        <td>4:.595</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Aug 17, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45520"></td>
+      </tr>
+      <tr>
+        <td>513</td>
+        <td>Twisted Canyon (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:38.256</td>
+        <td><span style="color:#ee4444">Lew</span></td>
+        <td>Jun 02, 2021</td>
+        <td>Jun 05, 2021</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>522</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Pro Race</td>
+        <td>1:19.031</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jun 30, 2023</td>
+        <td>Jul 02, 2023</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>522</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Pro Race</td>
+        <td>1:17.908</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 03, 2023</td>
+        <td>Jul 05, 2023</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>522</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP in Pro Race</td>
+        <td>3:56.744</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>Dec 15, 2022</td>
+        <td>Dec 17, 2022</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>522</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Pro Race</td>
+        <td>2:56.151</td>
+        <td><span style="color:#f0c03e">WickedWill944</span></td>
+        <td>Jan 21, 2021</td>
+        <td>Jan 23, 2021</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>522</td>
+        <td>Badlands Motorplex (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:21.929</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Aug 08, 2024</td>
+        <td>Aug 10, 2024</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>522</td>
+        <td>Cannon Crossover (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:37.711</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 14, 2020</td>
+        <td>Nov 16, 2020</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>522</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Time Trial</td>
+        <td>0:14.721</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 08, 2020</td>
+        <td>Aug 10, 2020</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>522</td>
+        <td>Forbidden Fortress (Shortcut) 200 HP in Time Trial</td>
+        <td>0:14.477</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 08, 2020</td>
+        <td>Aug 10, 2020</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>522</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:22.539</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Dec 09, 2020</td>
+        <td>Dec 11, 2020</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>522</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:52.105</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Sep 04, 2020</td>
+        <td>Sep 06, 2020</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>522</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:16.991</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Sep 04, 2020</td>
+        <td>Sep 06, 2020</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>522</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:14.569</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Feb 17, 2021</td>
+        <td>Feb 19, 2021</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>522</td>
+        <td>Twisted Canyon (Shortcut) 300 HP in Time Trial</td>
+        <td>0:27.249</td>
+        <td><span style="color:#ee4444">LuckyLuca593</span></td>
+        <td>Jan 03, 2021</td>
+        <td>Jan 05, 2021</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>2:18.476</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>May 31, 2023</td>
+        <td>Jun 01, 2023</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>1:34.339</td>
+        <td><span style="color:#b8b8b8">AB20</span></td>
+        <td>Sep 08, 2021</td>
+        <td>Sep 09, 2021</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Aviator Ranch (Shortcut) 100 HP in Pro Race</td>
+        <td>1:47.305</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Feb 03, 2021</td>
+        <td>Feb 04, 2021</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Pro Race</td>
+        <td>1:18.628</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jul 02, 2023</td>
+        <td>Jul 03, 2023</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Pro Race</td>
+        <td>1:17.799</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jul 05, 2023</td>
+        <td>Jul 06, 2023</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Pro Race</td>
+        <td>1:17.703</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jul 06, 2023</td>
+        <td>Jul 07, 2023</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Pro Race</td>
+        <td>4:09.889</td>
+        <td><span style="color:#8ac951">Bikerbabo16</span></td>
+        <td>Mar 09, 2023</td>
+        <td>Mar 10, 2023</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:27.590</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Aug 08, 2020</td>
+        <td>Aug 09, 2020</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:26.780</td>
+        <td><span style="color:#ee4444">Vuxla</span></td>
+        <td>Aug 09, 2020</td>
+        <td>Aug 10, 2020</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:25.515</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Sep 04, 2020</td>
+        <td>Sep 05, 2020</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Boathouse Bay (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:21.499</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Mar 29, 2024</td>
+        <td>Mar 30, 2024</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:27.964</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Sep 04, 2020</td>
+        <td>Sep 05, 2020</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:26.501</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Sep 04, 2020</td>
+        <td>Sep 05, 2020</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:25.131</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Nov 04, 2020</td>
+        <td>Nov 05, 2020</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:41.097</td>
+        <td><span style="color:#ee4444">Vuxla</span></td>
+        <td>Aug 08, 2020</td>
+        <td>Aug 09, 2020</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:40.371</td>
+        <td><span style="color:#ee4444">Vuxla</span></td>
+        <td>Aug 09, 2020</td>
+        <td>Aug 10, 2020</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Cannon Crossover (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:37.053</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 17, 2020</td>
+        <td>Oct 18, 2020</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:28.141</td>
+        <td><span style="color:#b8b8b8">AB20</span></td>
+        <td>Sep 26, 2021</td>
+        <td>Sep 27, 2021</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Time Trial</td>
+        <td>0:15.743</td>
+        <td><span style="color:#b8b8b8">cLLunacy</span></td>
+        <td>Aug 07, 2020</td>
+        <td>Aug 08, 2020</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:22.216</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Mar 03, 2022</td>
+        <td>Mar 04, 2022</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Gold Rush Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:56.839</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 09, 2020</td>
+        <td>Aug 10, 2020</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:47.581</td>
+        <td><span style="color:#8ac951">Bikerbabo16</span></td>
+        <td>Aug 19, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45522"></td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:42.816</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Jun 05, 2024</td>
+        <td>Jun 06, 2024</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Lighthouse Loop (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:32.734</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 24, 2024</td>
+        <td>Mar 25, 2024</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Lighthouse Loop (Shortcut) 100 HP in Time Trial</td>
+        <td>0:32.302</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 19, 2020</td>
+        <td>Oct 20, 2020</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Lighthouse Loop (Shortcut) 200 HP in Time Trial</td>
+        <td>0:30.689</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 19, 2020</td>
+        <td>Oct 20, 2020</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:17.281</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Nov 04, 2020</td>
+        <td>Nov 05, 2020</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:16.613</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Nov 03, 2020</td>
+        <td>Nov 04, 2020</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:16.578</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Nov 04, 2020</td>
+        <td>Nov 05, 2020</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:15.818</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Nov 04, 2020</td>
+        <td>Nov 05, 2020</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Twisted Canyon (Shortcut) 100 HP in Time Trial</td>
+        <td>0:29.693</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>May 05, 2021</td>
+        <td>May 06, 2021</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Twisted Canyon (Shortcut) 300 HP in Time Trial</td>
+        <td>0:27.866</td>
+        <td><span style="color:#ee4444">LuckyLuca593</span></td>
+        <td>Jan 01, 2021</td>
+        <td>Jan 02, 2021</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>535</td>
+        <td>Twisted Canyon (Shortcut) 300 HP in Time Trial</td>
+        <td>0:27.698</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Jan 02, 2021</td>
+        <td>Jan 03, 2021</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP in Battle Race</td>
+        <td>1:34.239</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Sep 09, 2021</td>
+        <td>Sep 09, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Shortcut) 300 HP in Pro Race</td>
+        <td>1:43.700</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Dec 03, 2020</td>
+        <td>Dec 03, 2020</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Pro Race</td>
+        <td>1:18.193</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 03, 2023</td>
+        <td>Jul 03, 2023</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Pro Race</td>
+        <td>1:17.962</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jul 03, 2023</td>
+        <td>Jul 03, 2023</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Pro Race</td>
+        <td>1:17.719</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 06, 2023</td>
+        <td>Jul 06, 2023</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Pro Race</td>
+        <td>1:17.668</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 07, 2023</td>
+        <td>Jul 07, 2023</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP in Pro Race</td>
+        <td>1:06.548</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 18, 2023</td>
+        <td>Jun 18, 2023</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP in Pro Race</td>
+        <td>1:05.748</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 18, 2023</td>
+        <td>Jun 18, 2023</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Twisted Canyon (Non-Shortcut) 100 HP in Pro Race</td>
+        <td>3:30.153</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 05, 2023</td>
+        <td>Jul 05, 2023</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Twisted Canyon (Shortcut) 200 HP in Pro Race</td>
+        <td>2:38.280</td>
+        <td><span style="color:#6666ee">Vaurien</span></td>
+        <td>Jan 30, 2021</td>
+        <td>Jan 30, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:30.743</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:26.935</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:26.849</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:26.805</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:26.303</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:26.151</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:25.793</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 23, 2021</td>
+        <td>Dec 23, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:28.223</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:25.163</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:24.975</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:24.966</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:24.832</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:24.793</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:28.566</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:24.289</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:24.238</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:24.094</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:24.044</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Aviator Ranch (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:23.843</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:27.342</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 09, 2020</td>
+        <td>Aug 09, 2020</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:26.092</td>
+        <td><span style="color:#f0c03e">WickedWill944</span></td>
+        <td>Feb 03, 2021</td>
+        <td>Feb 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:25.305</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Oct 21, 2020</td>
+        <td>Oct 21, 2020</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:40.938</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Aug 09, 2020</td>
+        <td>Aug 09, 2020</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:40.519</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 09, 2020</td>
+        <td>Aug 09, 2020</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:28.117</td>
+        <td><span style="color:#b8b8b8">AB20</span></td>
+        <td>Sep 27, 2021</td>
+        <td>Sep 27, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP in Time Trial</td>
+        <td>0:14.892</td>
+        <td><span style="color:#ee4444">Vuxla</span></td>
+        <td>Aug 08, 2020</td>
+        <td>Aug 08, 2020</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP in Time Trial</td>
+        <td>0:12.524</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Dec 23, 2021</td>
+        <td>Dec 23, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Gold Rush Road (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:57.168</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Aug 09, 2020</td>
+        <td>Aug 09, 2020</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:48.366</td>
+        <td><span style="color:#8ac951">Bikerbabo16</span></td>
+        <td>Jun 05, 2024</td>
+        <td>Jun 05, 2024</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:37.069</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 02, 2021</td>
+        <td>Jun 02, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:36.944</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Jun 02, 2021</td>
+        <td>Jun 02, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:36.808</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 21, 2024</td>
+        <td>Mar 21, 2024</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:36.719</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 21, 2024</td>
+        <td>Mar 21, 2024</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:36.636</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 21, 2024</td>
+        <td>Mar 21, 2024</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:36.603</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 21, 2024</td>
+        <td>Mar 21, 2024</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:36.500</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 21, 2024</td>
+        <td>Mar 21, 2024</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Lighthouse Loop (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:34.986</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Mar 22, 2024</td>
+        <td>Mar 22, 2024</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Lighthouse Loop (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:33.697</td>
+        <td><span style="color:#44bbee">Assassin4890</span></td>
+        <td>Jun 03, 2021</td>
+        <td>Jun 03, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:18.061</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Aug 09, 2020</td>
+        <td>Aug 09, 2020</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Twisted Canyon (Non-Shortcut) 100 HP in Time Trial</td>
+        <td>0:38.028</td>
+        <td><span style="color:#ee4444">Lew</span></td>
+        <td>Jun 05, 2021</td>
+        <td>Jun 05, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Twisted Canyon (Non-Shortcut) 200 HP in Time Trial</td>
+        <td>0:44.154</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 18, 2021</td>
+        <td>Aug 18, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Twisted Canyon (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:39.835</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 18, 2021</td>
+        <td>Aug 18, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Twisted Canyon (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:38.680</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 18, 2021</td>
+        <td>Aug 18, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Twisted Canyon (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:36.571</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 18, 2021</td>
+        <td>Aug 18, 2021</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td>Twisted Canyon (Non-Shortcut) 300 HP in Time Trial</td>
+        <td>0:34.464</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Aug 18, 2021</td>
+        <td>Aug 18, 2021</td>
+        <td>0</td>
+      </tr></tbody></table>
+        </div>
+        <p><a href="index.html">Back to Root</a></p>
+      </div>
+    </body>
+    </html>

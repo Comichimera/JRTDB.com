@@ -1,0 +1,181 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>World Record History - Lighthouse Loop (Shortcut)</title>
+      <link rel="stylesheet" type="text/css" href="styles/styles.css">
+      <script>
+        function calculateDynamicStoodFor(dateAchieved, elementId) {
+          const baseDate = new Date(1900, 0, 1);
+          const achievedDate = new Date(baseDate.getTime() + (dateAchieved - 1) * 24 * 60 * 60 * 1000);
+          const today = new Date();
+          const diffTime = Math.abs(today - achievedDate);
+          const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+          document.getElementById(elementId).innerText = diffDays + ' days';
+        }
+      </script>
+    </head>
+    <body>
+      <div class="main-container">
+        <h1>World Record History - Lighthouse Loop (Shortcut)</h1>
+        <div class="content">
+          <div id="TT">
+            <h1>Time Trial</h1><div id="TT-100">
+      <h2>100 HP</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Date</th>
+            <th>Player</th>
+            <th>Stood For</th>
+          </tr>
+        </thead>
+        <tbody id="TT-100-body">
+        <tr>
+          <td>0:32.302</td>
+          <td>Oct 19, 2020</td>
+          <td><span style="color:#09b876">Comichimera</span></td>
+          <td>1 days</td>
+        </tr>
+      
+        <tr>
+          <td>0:28.479</td>
+          <td>Oct 20, 2020</td>
+          <td><span style="color:#09b876">Comichimera</span></td>
+          <td>27 days</td>
+        </tr>
+      
+        <tr>
+          <td>0:28.470</td>
+          <td>Nov 16, 2020</td>
+          <td><span style="color:#e77471">Clexxer</span></td>
+          <td>138 days</td>
+        </tr>
+      
+        <tr>
+          <td>0:28.447</td>
+          <td>Apr 03, 2021</td>
+          <td><span style="color:#09b876">Comichimera</span></td>
+          <td>1094 days</td>
+        </tr>
+      
+        <tr>
+          <td>0:28.420</td>
+          <td>Apr 01, 2024</td>
+          <td><span style="color:#6666ee">Vaurien</span></td>
+          <td><span id="stoodFor-TT-100-4"></span></td>
+        </tr>
+      <script>
+          calculateDynamicStoodFor(45382, 'stoodFor-TT-100-4');
+        </script></tbody></table></div><div id="TT-200">
+      <h2>200 HP</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Date</th>
+            <th>Player</th>
+            <th>Stood For</th>
+          </tr>
+        </thead>
+        <tbody id="TT-200-body">
+        <tr>
+          <td>0:30.689</td>
+          <td>Oct 19, 2020</td>
+          <td><span style="color:#09b876">Comichimera</span></td>
+          <td>1 days</td>
+        </tr>
+      
+        <tr>
+          <td>0:28.334</td>
+          <td>Oct 20, 2020</td>
+          <td><span style="color:#09b876">Comichimera</span></td>
+          <td>27 days</td>
+        </tr>
+      
+        <tr>
+          <td>0:27.479</td>
+          <td>Nov 16, 2020</td>
+          <td><span style="color:#e77471">Clexxer</span></td>
+          <td>56 days</td>
+        </tr>
+      
+        <tr>
+          <td>0:27.288</td>
+          <td>Jan 11, 2021</td>
+          <td><span style="color:#6666ee">Vaurien</span></td>
+          <td>82 days</td>
+        </tr>
+      
+        <tr>
+          <td>0:27.271</td>
+          <td>Apr 03, 2021</td>
+          <td><span style="color:#09b876">Comichimera</span></td>
+          <td>1094 days</td>
+        </tr>
+      
+        <tr>
+          <td>0:27.266</td>
+          <td>Apr 01, 2024</td>
+          <td><span style="color:#6666ee">Vaurien</span></td>
+          <td><span id="stoodFor-TT-200-5"></span></td>
+        </tr>
+      <script>
+          calculateDynamicStoodFor(45382, 'stoodFor-TT-200-5');
+        </script></tbody></table></div><div id="TT-300">
+      <h2>300 HP</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Date</th>
+            <th>Player</th>
+            <th>Stood For</th>
+          </tr>
+        </thead>
+        <tbody id="TT-300-body">
+        <tr>
+          <td>0:26.926</td>
+          <td>Oct 20, 2020</td>
+          <td><span style="color:#09b876">Comichimera</span></td>
+          <td>14 days</td>
+        </tr>
+      
+        <tr>
+          <td>0:25.859</td>
+          <td>Nov 03, 2020</td>
+          <td><span style="color:#09b876">Comichimera</span></td>
+          <td>13 days</td>
+        </tr>
+      
+        <tr>
+          <td>0:25.814</td>
+          <td>Nov 16, 2020</td>
+          <td><span style="color:#e77471">Clexxer</span></td>
+          <td>56 days</td>
+        </tr>
+      
+        <tr>
+          <td>0:25.789</td>
+          <td>Jan 11, 2021</td>
+          <td><span style="color:#6666ee">Vaurien</span></td>
+          <td>82 days</td>
+        </tr>
+      
+        <tr>
+          <td>0:25.767</td>
+          <td>Apr 03, 2021</td>
+          <td><span style="color:#09b876">Comichimera</span></td>
+          <td>1092 days</td>
+        </tr>
+      
+        <tr>
+          <td>0:25.747</td>
+          <td>Mar 30, 2024</td>
+          <td><span style="color:#6666ee">Vaurien</span></td>
+          <td><span id="stoodFor-TT-300-5"></span></td>
+        </tr>
+      <script>
+          calculateDynamicStoodFor(45380, 'stoodFor-TT-300-5');
+        </script></tbody></table></div></div><p><a href="index.html">Back to Root</a></p></div></div></body></html>

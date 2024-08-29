@@ -1,0 +1,450 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>World Record History - Lighthouse Loop (Non-Shortcut)</title>
+      <link rel="stylesheet" type="text/css" href="styles/styles.css">
+      <script>
+        function calculateDynamicStoodFor(dateAchieved, elementId) {
+          const baseDate = new Date(1900, 0, 1);
+          const achievedDate = new Date(baseDate.getTime() + (dateAchieved - 1) * 24 * 60 * 60 * 1000);
+          const today = new Date();
+          const diffTime = Math.abs(today - achievedDate);
+          const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+          document.getElementById(elementId).innerText = diffDays + ' days';
+        }
+      </script>
+    </head>
+    <body>
+      <div class="main-container">
+        <h1>World Record History - Lighthouse Loop (Non-Shortcut)</h1>
+        <div class="content">
+  <div id="BR">
+      <h1>Battle Race</h1><div id="BR-100">
+        <h2>100 HP</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Date</th>
+              <th>Player</th>
+              <th>Stood For</th>
+            </tr>
+          </thead>
+          <tbody id="BR-100-body">
+          <tr>
+            <td>3:19.964</td>
+            <td>Jun 01, 2021</td>
+            <td><span style="color:#ee4444">SmugPotato</span></td>
+            <td><span id="stoodFor-BR-100-0"></span></td>
+          </tr>
+        <script>
+            calculateDynamicStoodFor(44347, 'stoodFor-BR-100-0');
+          </script></tbody></table></div><div id="BR-200">
+        <h2>200 HP</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Date</th>
+              <th>Player</th>
+              <th>Stood For</th>
+            </tr>
+          </thead>
+          <tbody id="BR-200-body">
+          <tr>
+            <td>3:13.685</td>
+            <td>Jun 04, 2021</td>
+            <td><span style="color:#ee4444">SmugPotato</span></td>
+            <td>726 days</td>
+          </tr>
+        
+          <tr>
+            <td>3:10.354</td>
+            <td>May 31, 2023</td>
+            <td><span style="color:#ee4444">GoBucky76</span></td>
+            <td><span id="stoodFor-BR-200-1"></span></td>
+          </tr>
+        <script>
+            calculateDynamicStoodFor(45076, 'stoodFor-BR-200-1');
+          </script></tbody></table></div><div id="BR-300">
+        <h2>300 HP</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Date</th>
+              <th>Player</th>
+              <th>Stood For</th>
+            </tr>
+          </thead>
+          <tbody id="BR-300-body">
+          <tr>
+            <td>3:05.330</td>
+            <td>Jul 10, 2022</td>
+            <td><span style="color:#ee4444">SmugPotato</span></td>
+            <td><span id="stoodFor-BR-300-0"></span></td>
+          </tr>
+        <script>
+            calculateDynamicStoodFor(44751, 'stoodFor-BR-300-0');
+          </script></tbody></table></div></div><div id="PR">
+      <h1>Pro Race</h1><div id="PR-100">
+        <h2>100 HP</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Date</th>
+              <th>Player</th>
+              <th>Stood For</th>
+            </tr>
+          </thead>
+          <tbody id="PR-100-body">
+          <tr>
+            <td>3:23.856</td>
+            <td>Nov 28, 2020</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>7 days</td>
+          </tr>
+        
+          <tr>
+            <td>3:17.003</td>
+            <td>Dec 05, 2020</td>
+            <td><span style="color:#ee4444">SmugPotato</span></td>
+            <td>943 days</td>
+          </tr>
+        
+          <tr>
+            <td>3:16.690</td>
+            <td>Jul 06, 2023</td>
+            <td><span style="color:#8ac951">Lulustain</span></td>
+            <td><span id="stoodFor-PR-100-2"></span></td>
+          </tr>
+        <script>
+            calculateDynamicStoodFor(45112, 'stoodFor-PR-100-2');
+          </script></tbody></table></div><div id="PR-200">
+        <h2>200 HP</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Date</th>
+              <th>Player</th>
+              <th>Stood For</th>
+            </tr>
+          </thead>
+          <tbody id="PR-200-body">
+          <tr>
+            <td>3:06.191</td>
+            <td>Nov 29, 2020</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>949 days</td>
+          </tr>
+        
+          <tr>
+            <td>3:05.938</td>
+            <td>Jul 06, 2023</td>
+            <td><span style="color:#8ac951">Lulustain</span></td>
+            <td>315 days</td>
+          </tr>
+        
+          <tr>
+            <td>3:01.622</td>
+            <td>May 16, 2024</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td><span id="stoodFor-PR-200-2"></span></td>
+          </tr>
+        <script>
+            calculateDynamicStoodFor(45427, 'stoodFor-PR-200-2');
+          </script></tbody></table></div><div id="PR-300">
+        <h2>300 HP</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Date</th>
+              <th>Player</th>
+              <th>Stood For</th>
+            </tr>
+          </thead>
+          <tbody id="PR-300-body">
+          <tr>
+            <td>2:50.661</td>
+            <td>Dec 02, 2020</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td><span id="stoodFor-PR-300-0"></span></td>
+          </tr>
+        <script>
+            calculateDynamicStoodFor(44166, 'stoodFor-PR-300-0');
+          </script></tbody></table></div></div><div id="TT">
+      <h1>Time Trial</h1><div id="TT-100">
+        <h2>100 HP</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Date</th>
+              <th>Player</th>
+              <th>Stood For</th>
+            </tr>
+          </thead>
+          <tbody id="TT-100-body">
+          <tr>
+            <td>0:39.531</td>
+            <td>May 28, 2019</td>
+            <td><span style="color:#ff3091">BroskiRacing</span></td>
+            <td>394 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:38.872</td>
+            <td>Jun 25, 2020</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>45 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:37.322</td>
+            <td>Aug 09, 2020</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>33 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:37.240</td>
+            <td>Sep 11, 2020</td>
+            <td><span style="color:#ee4444">SmugPotato</span></td>
+            <td>36 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:37.198</td>
+            <td>Oct 17, 2020</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>228 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:37.069</td>
+            <td>Jun 02, 2021</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>0 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:36.944</td>
+            <td>Jun 02, 2021</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>0 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:36.941</td>
+            <td>Jun 02, 2021</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>219 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:36.876</td>
+            <td>Jan 07, 2022</td>
+            <td><span style="color:#6666ee">MachrixTM</span></td>
+            <td>804 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:36.808</td>
+            <td>Mar 21, 2024</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>0 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:36.719</td>
+            <td>Mar 21, 2024</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>0 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:36.636</td>
+            <td>Mar 21, 2024</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>0 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:36.603</td>
+            <td>Mar 21, 2024</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>0 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:36.500</td>
+            <td>Mar 21, 2024</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>0 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:36.384</td>
+            <td>Mar 21, 2024</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td><span id="stoodFor-TT-100-14"></span></td>
+          </tr>
+        <script>
+            calculateDynamicStoodFor(45371, 'stoodFor-TT-100-14');
+          </script></tbody></table></div><div id="TT-200">
+        <h2>200 HP</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Date</th>
+              <th>Player</th>
+              <th>Stood For</th>
+            </tr>
+          </thead>
+          <tbody id="TT-200-body">
+          <tr>
+            <td>0:36.568</td>
+            <td>Aug 10, 2020</td>
+            <td><span style="color:#ee4444">SmugPotato</span></td>
+            <td>25 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:35.882</td>
+            <td>Sep 04, 2020</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>8 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:35.855</td>
+            <td>Sep 12, 2020</td>
+            <td><span style="color:#ee4444">SmugPotato</span></td>
+            <td>35 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:35.437</td>
+            <td>Oct 17, 2020</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>719 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:35.228</td>
+            <td>Oct 06, 2022</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>533 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:34.986</td>
+            <td>Mar 22, 2024</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>0 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:34.840</td>
+            <td>Mar 22, 2024</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>90 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:34.630</td>
+            <td>Jun 20, 2024</td>
+            <td><span style="color:#f0c03e">Krrly</span></td>
+            <td><span id="stoodFor-TT-200-7"></span></td>
+          </tr>
+        <script>
+            calculateDynamicStoodFor(45462, 'stoodFor-TT-200-7');
+          </script></tbody></table></div><div id="TT-300">
+        <h2>300 HP</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Date</th>
+              <th>Player</th>
+              <th>Stood For</th>
+            </tr>
+          </thead>
+          <tbody id="TT-300-body">
+          <tr>
+            <td>0:35.415</td>
+            <td>Jul 02, 2020</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>64 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:34.738</td>
+            <td>Sep 04, 2020</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>8 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:34.077</td>
+            <td>Sep 12, 2020</td>
+            <td><span style="color:#ee4444">SmugPotato</span></td>
+            <td>35 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:34.042</td>
+            <td>Oct 17, 2020</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>229 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:33.697</td>
+            <td>Jun 03, 2021</td>
+            <td><span style="color:#44bbee">Assassin4890</span></td>
+            <td>0 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:33.598</td>
+            <td>Jun 03, 2021</td>
+            <td><span style="color:#f0c03e">BlankFA</span></td>
+            <td>144 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:32.947</td>
+            <td>Oct 25, 2021</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>881 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:32.734</td>
+            <td>Mar 24, 2024</td>
+            <td><span style="color:#09b876">Comichimera</span></td>
+            <td>1 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:32.533</td>
+            <td>Mar 25, 2024</td>
+            <td><span style="color:#f0c03e">Krrly</span></td>
+            <td>74 days</td>
+          </tr>
+        
+          <tr>
+            <td>0:32.242</td>
+            <td>Jun 07, 2024</td>
+            <td><span style="color:#f0c03e">Krrly</span></td>
+            <td><span id="stoodFor-TT-300-9"></span></td>
+          </tr>
+        <script>
+            calculateDynamicStoodFor(45449, 'stoodFor-TT-300-9');
+          </script></tbody></table></div></div><p><a href="index.html">Back to Root</a></p></div></div></body></html>

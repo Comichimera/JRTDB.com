@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joy Ride Turbo Database</title>
+<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<div class="main-container">
+  <div class="content">
+    <h1>Champions</h1>
+      <table>
+        <tr><th>Champion(s)</th><th>From</th><th>Until</th><th>Duration</th></tr>
+        <tr><td><span style="color:#8ac951">Zimmycakes</span></td><td>19 Jun, 2017</td><td>25 Nov, 2018</td><td>524 Days</td></tr>
+        <tr><td><span style="color:#8ac951">Zimmycakes</span><br><span style="color:#a010a0">Melwing17</span></td><td>25 Nov, 2018</td><td>30 Nov, 2018</td><td>5 Days</td></tr>
+        <tr><td><span style="color:#8ac951">Zimmycakes</span><br><span style="color:#a010a0">Melwing17</span><br><span style="color:#a010a0">ejones808</span></td><td>30 Nov, 2018</td><td>03 Dec, 2018</td><td>3 Days</td></tr>
+        <tr><td><span style="color:#a010a0">ejones808</span></td><td>03 Dec, 2018</td><td>28 May, 2019</td><td>176 Days</td></tr>
+        <tr><td><span style="color:#ff3091">BroskiRacing</span></td><td>28 May, 2019</td><td>26 Nov, 2019</td><td>182 Days</td></tr>
+        <tr><td><span style="color:#ff3091">BroskiRacing</span><br><span style="color:#09b876">Comichimera</span></td><td>26 Nov, 2019</td><td>10 Dec, 2019</td><td>14 Days</td></tr>
+        <tr><td><span style="color:#09b876">Comichimera</span></td><td>10 Dec, 2019</td><td>10 Aug, 2020</td><td>244 Days</td></tr>
+        <tr><td><span style="color:#ee4444">SmugPotato</span></td><td>10 Aug, 2020</td><td>03 Sep, 2020</td><td>24 Days</td></tr>
+        <tr><td><span style="color:#09b876">Comichimera</span></td><td>03 Sep, 2020</td><td>09 Sep, 2020</td><td>5 Days</td></tr>
+        <tr><td><span style="color:#ee4444">SmugPotato</span></td><td>09 Sep, 2020</td><td>04 Oct, 2020</td><td>25 Days</td></tr>
+        <tr><td><span style="color:#ee4444">SmugPotato</span><br><span style="color:#09b876">Comichimera</span></td><td>04 Oct, 2020</td><td>05 Oct, 2020</td><td>1 Day</td></tr>
+        <tr><td><span style="color:#09b876">Comichimera</span></td><td>05 Oct, 2020</td><td>17 Feb, 2021</td><td>136 Days</td></tr>
+        <tr><td><span style="color:#6666ee">Vaurien</span></td><td>17 Feb, 2021</td><td>18 Feb, 2021</td><td>1 Day</td></tr>
+        <tr><td><span style="color:#09b876">Comichimera</span></td><td>18 Feb, 2021</td><td>04 Jun, 2021</td><td>106 Days</td></tr>
+        <tr><td><span style="color:#ee4444">SmugPotato</span></td><td>04 Jun, 2021</td><td>18 Aug, 2021</td><td>75 Days</td></tr>
+        <tr><td><span style="color:#ee4444">SmugPotato</span><br><span style="color:#09b876">Comichimera</span></td><td>18 Aug, 2021</td><td>22 Aug, 2021</td><td>4 Days</td></tr>
+        <tr><td><span style="color:#09b876">Comichimera</span></td><td>22 Aug, 2021</td><td>Ongoing</td><td id="duration"></td></tr>
+      </table>
+    <p><a href="index.html">Back to Root</a></p>
+  </div>
+  <p>Made with ♥ by Comichimera</p><br>
+</div>
+
+<script>
+  // JavaScript to calculate the duration dynamically
+  function calculateDays(fromDate) {
+    const oneDay = 24 * 60 * 60 * 1000;
+    const currentDate = new Date();
+    const from = new Date(fromDate);
+    const diffDays = Math.round(Math.abs((currentDate - from) / oneDay));
+    return diffDays;
+  }
+
+  // Update the duration in the last row
+  const fromDate = "22 Aug, 2021"; // Date format used in the table
+  const durationElement = document.getElementById("duration");
+  durationElement.textContent = calculateDays(fromDate) + " Days";
+</script>
+
+</body>
+</html>

@@ -1,0 +1,801 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Longest Standing Records</title>
+      <link rel="stylesheet" type="text/css" href="styles/styles_LS.css">
+      <script>
+        function calculateStoodFor() {
+          const baseDate = new Date(1900, 0, 0); // Jan 0, 1900 to match Excel's date system
+          const today = new Date();
+          const daysSinceBaseDate = Math.floor((today - baseDate) / (1000 * 60 * 60 * 24));
+
+          const unbeatenRecords = document.querySelectorAll('.unbeaten');
+          unbeatenRecords.forEach(function(record) {
+            const dateAchieved = parseInt(record.getAttribute('data-date-achieved'), 10);
+            const stoodFor = daysSinceBaseDate - dateAchieved;
+            record.innerText = stoodFor;
+          });
+        }
+
+        window.onload = calculateStoodFor;
+      </script>
+    </head>
+    <body>
+      <div class="main-container">
+        <h1>Longest Standing Records (Battle Race)</h1>
+        <div class="content">
+          <table>
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Record</th>
+                <th>Record Time</th>
+                <th>Player</th>
+                <th>Date Achieved</th>
+                <th>Date Beaten</th>
+                <th>Stood For (days)</th>
+              </tr>
+            </thead>
+            <tbody>
+      <tr>
+        <td>1</td>
+        <td>Lighthouse Loop (Non-Shortcut) 100 HP</td>
+        <td>3:19.964</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 01, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44347"></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Badlands Motorplex (Non-Shortcut) 200 HP</td>
+        <td>2:19.407</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44350"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP</td>
+        <td>1:26.889</td>
+        <td><span style="color:#b8b8b8">AB20</span></td>
+        <td>Sep 09, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44447"></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Forbidden Fortress (Non-Shortcut) 300 HP</td>
+        <td>2:25.735</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 23, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44491"></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP</td>
+        <td>1:36.364</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 23, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44491"></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP</td>
+        <td>2:10.235</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 25, 2021</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44493"></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Great Dragon Road (Non-Shortcut) 300 HP</td>
+        <td>2:11.274</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 10, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44751"></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Lighthouse Loop (Non-Shortcut) 300 HP</td>
+        <td>3:05.330</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 10, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44751"></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 300 HP</td>
+        <td>1:36.053</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 10, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44751"></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Badlands Motorplex (Non-Shortcut) 300 HP</td>
+        <td>2:16.416</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 11, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44752"></td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP</td>
+        <td>3:38.052</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>May 28, 2021</td>
+        <td>Jul 07, 2023</td>
+        <td>770</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP</td>
+        <td>2:23.783</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>May 28, 2021</td>
+        <td>Jul 03, 2023</td>
+        <td>766</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>Aviator Ranch (Shortcut) 100 HP</td>
+        <td>2:27.300</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 01, 2021</td>
+        <td>Jul 01, 2023</td>
+        <td>760</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>Aviator Ranch (Shortcut) 200 HP</td>
+        <td>2:20.956</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>Jul 01, 2023</td>
+        <td>757</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>Gold Rush Road (Non-Shortcut) 100 HP</td>
+        <td>4:37.152</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 02, 2021</td>
+        <td>Jul 03, 2023</td>
+        <td>731</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP</td>
+        <td>4:26.478</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>Jun 01, 2023</td>
+        <td>727</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP</td>
+        <td>2:21.967</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>May 31, 2023</td>
+        <td>726</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>Cannon Crossover (Non-Shortcut) 200 HP</td>
+        <td>3:27.474</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>May 31, 2023</td>
+        <td>726</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>Lighthouse Loop (Non-Shortcut) 200 HP</td>
+        <td>3:13.685</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>May 31, 2023</td>
+        <td>726</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP</td>
+        <td>2:22.913</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>May 29, 2023</td>
+        <td>724</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>Great Dragon Road (Non-Shortcut) 200 HP</td>
+        <td>2:11.627</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>May 29, 2023</td>
+        <td>724</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP</td>
+        <td>1:29.128</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Sep 21, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44824"></td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>Forbidden Fortress (Shortcut) 200 HP</td>
+        <td>1:23.154</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Sep 23, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44826"></td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP</td>
+        <td>1:18.525</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Sep 23, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44826"></td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>Twisted Canyon (Shortcut) 200 HP</td>
+        <td>2:57.562</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Sep 29, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44832"></td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>Twisted Canyon (Shortcut) 300 HP</td>
+        <td>2:48.597</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Sep 29, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44832"></td>
+      </tr>
+      <tr>
+        <td>27</td>
+        <td>Twisted Canyon (Shortcut) 100 HP</td>
+        <td>3:03.109</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Sep 29, 2022</td>
+        <td>Jul 31, 2024</td>
+        <td>671</td>
+      </tr>
+      <tr>
+        <td>28</td>
+        <td>Twisted Canyon (Non-Shortcut) 100 HP</td>
+        <td>3:32.129</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Nov 28, 2022</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44892"></td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td>Forbidden Fortress (Non-Shortcut) 100 HP</td>
+        <td>2:46.119</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 23, 2021</td>
+        <td>Jul 06, 2023</td>
+        <td>621</td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP</td>
+        <td>2:35.862</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 23, 2021</td>
+        <td>Jul 06, 2023</td>
+        <td>621</td>
+      </tr>
+      <tr>
+        <td>31</td>
+        <td>Twisted Canyon (Non-Shortcut) 200 HP</td>
+        <td>3:27.265</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>Feb 11, 2023</td>
+        <td>617</td>
+      </tr>
+      <tr>
+        <td>32</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP</td>
+        <td>2:32.666</td>
+        <td><span style="color:#09b876">Comichimera</span></td>
+        <td>Oct 23, 2021</td>
+        <td>Jul 01, 2023</td>
+        <td>616</td>
+      </tr>
+      <tr>
+        <td>33</td>
+        <td>Twisted Canyon (Non-Shortcut) 200 HP</td>
+        <td>3:25.636</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Feb 11, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="44967"></td>
+      </tr>
+      <tr>
+        <td>34</td>
+        <td>Twisted Canyon (Non-Shortcut) 100 HP</td>
+        <td>3:32.905</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>May 30, 2021</td>
+        <td>Nov 28, 2022</td>
+        <td>547</td>
+      </tr>
+      <tr>
+        <td>35</td>
+        <td>Twisted Canyon (Shortcut) 100 HP</td>
+        <td>3:03.195</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>May 29, 2021</td>
+        <td>Sep 29, 2022</td>
+        <td>488</td>
+      </tr>
+      <tr>
+        <td>36</td>
+        <td>Twisted Canyon (Shortcut) 200 HP</td>
+        <td>3:03.026</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>Sep 29, 2022</td>
+        <td>482</td>
+      </tr>
+      <tr>
+        <td>37</td>
+        <td>Forbidden Fortress (Shortcut) 100 HP</td>
+        <td>1:29.324</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>May 29, 2021</td>
+        <td>Sep 21, 2022</td>
+        <td>480</td>
+      </tr>
+      <tr>
+        <td>38</td>
+        <td>Forbidden Fortress (Shortcut) 200 HP</td>
+        <td>1:24.869</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>Sep 23, 2022</td>
+        <td>476</td>
+      </tr>
+      <tr>
+        <td>39</td>
+        <td>Great Dragon Road (Non-Shortcut) 200 HP</td>
+        <td>2:02.696</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>May 29, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45074"></td>
+      </tr>
+      <tr>
+        <td>40</td>
+        <td>Lighthouse Loop (Non-Shortcut) 200 HP</td>
+        <td>3:10.354</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>May 31, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45076"></td>
+      </tr>
+      <tr>
+        <td>41</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP</td>
+        <td>2:15.796</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>Jun 01, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45077"></td>
+      </tr>
+      <tr>
+        <td>42</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP</td>
+        <td>2:31.327</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 01, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45107"></td>
+      </tr>
+      <tr>
+        <td>42</td>
+        <td>Aviator Ranch (Shortcut) 100 HP</td>
+        <td>2:21.283</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 01, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45107"></td>
+      </tr>
+      <tr>
+        <td>42</td>
+        <td>Aviator Ranch (Shortcut) 200 HP</td>
+        <td>2:19.845</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 01, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45107"></td>
+      </tr>
+      <tr>
+        <td>42</td>
+        <td>Twisted Canyon (Non-Shortcut) 300 HP</td>
+        <td>3:22.631</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 01, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45107"></td>
+      </tr>
+      <tr>
+        <td>46</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP</td>
+        <td>2:13.839</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 02, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45108"></td>
+      </tr>
+      <tr>
+        <td>46</td>
+        <td>Aviator Ranch (Non-Shortcut) 300 HP</td>
+        <td>2:12.590</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 02, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45108"></td>
+      </tr>
+      <tr>
+        <td>46</td>
+        <td>Aviator Ranch (Shortcut) 300 HP</td>
+        <td>1:40.567</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 02, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45108"></td>
+      </tr>
+      <tr>
+        <td>49</td>
+        <td>Boathouse Bay (Non-Shortcut) 100 HP</td>
+        <td>2:22.531</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 03, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45109"></td>
+      </tr>
+      <tr>
+        <td>49</td>
+        <td>Gold Rush Road (Non-Shortcut) 100 HP</td>
+        <td>4:31.719</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 03, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45109"></td>
+      </tr>
+      <tr>
+        <td>49</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP</td>
+        <td>4:14.392</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 03, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45109"></td>
+      </tr>
+      <tr>
+        <td>52</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP</td>
+        <td>2:29.805</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 04, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45110"></td>
+      </tr>
+      <tr>
+        <td>53</td>
+        <td>Forbidden Fortress (Non-Shortcut) 100 HP</td>
+        <td>2:44.066</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 06, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45112"></td>
+      </tr>
+      <tr>
+        <td>53</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP</td>
+        <td>2:32.652</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 06, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45112"></td>
+      </tr>
+      <tr>
+        <td>53</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP</td>
+        <td>4:06.550</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 06, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45112"></td>
+      </tr>
+      <tr>
+        <td>56</td>
+        <td>Cannon Crossover (Non-Shortcut) 100 HP</td>
+        <td>3:28.365</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 07, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45113"></td>
+      </tr>
+      <tr>
+        <td>56</td>
+        <td>Cannon Crossover (Non-Shortcut) 200 HP</td>
+        <td>3:20.213</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 07, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45113"></td>
+      </tr>
+      <tr>
+        <td>56</td>
+        <td>Cannon Crossover (Non-Shortcut) 300 HP</td>
+        <td>3:16.498</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 07, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45113"></td>
+      </tr>
+      <tr>
+        <td>59</td>
+        <td>Cannon Crossover (Non-Shortcut) 300 HP</td>
+        <td>3:19.669</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 11, 2022</td>
+        <td>Jul 07, 2023</td>
+        <td>361</td>
+      </tr>
+      <tr>
+        <td>60</td>
+        <td>Boathouse Bay (Non-Shortcut) 300 HP</td>
+        <td>2:21.216</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 10, 2022</td>
+        <td>Jul 05, 2023</td>
+        <td>360</td>
+      </tr>
+      <tr>
+        <td>60</td>
+        <td>Gold Rush Road (Non-Shortcut) 300 HP</td>
+        <td>4:11.108</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 11, 2022</td>
+        <td>Jul 06, 2023</td>
+        <td>360</td>
+      </tr>
+      <tr>
+        <td>62</td>
+        <td>Badlands Motorplex (Non-Shortcut) 100 HP</td>
+        <td>2:30.687</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 11, 2022</td>
+        <td>Jul 04, 2023</td>
+        <td>358</td>
+      </tr>
+      <tr>
+        <td>63</td>
+        <td>Aviator Ranch (Non-Shortcut) 300 HP</td>
+        <td>2:13.132</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 10, 2022</td>
+        <td>Jul 02, 2023</td>
+        <td>357</td>
+      </tr>
+      <tr>
+        <td>63</td>
+        <td>Aviator Ranch (Shortcut) 300 HP</td>
+        <td>1:54.008</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 10, 2022</td>
+        <td>Jul 02, 2023</td>
+        <td>357</td>
+      </tr>
+      <tr>
+        <td>65</td>
+        <td>Twisted Canyon (Non-Shortcut) 300 HP</td>
+        <td>3:25.486</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 11, 2022</td>
+        <td>Jul 01, 2023</td>
+        <td>355</td>
+      </tr>
+      <tr>
+        <td>66</td>
+        <td>Boathouse Bay (Non-Shortcut) 300 HP</td>
+        <td>2:06.158</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>Nov 03, 2023</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45232"></td>
+      </tr>
+      <tr>
+        <td>67</td>
+        <td>Aviator Ranch (Non-Shortcut) 100 HP</td>
+        <td>2:37.258</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>May 28, 2021</td>
+        <td>Oct 23, 2021</td>
+        <td>148</td>
+      </tr>
+      <tr>
+        <td>68</td>
+        <td>Great Dragon Road (Non-Shortcut) 100 HP</td>
+        <td>2:21.773</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 01, 2021</td>
+        <td>Oct 25, 2021</td>
+        <td>146</td>
+      </tr>
+      <tr>
+        <td>69</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 100 HP</td>
+        <td>1:36.424</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 01, 2021</td>
+        <td>Oct 23, 2021</td>
+        <td>144</td>
+      </tr>
+      <tr>
+        <td>70</td>
+        <td>Boathouse Bay (Non-Shortcut) 300 HP</td>
+        <td>2:15.674</td>
+        <td><span style="color:#8ac951">Lulustain</span></td>
+        <td>Jul 05, 2023</td>
+        <td>Nov 03, 2023</td>
+        <td>121</td>
+      </tr>
+      <tr>
+        <td>71</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP</td>
+        <td>2:49.507</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>Sep 27, 2021</td>
+        <td>115</td>
+      </tr>
+      <tr>
+        <td>72</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP</td>
+        <td>1:35.635</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jun 04, 2021</td>
+        <td>Sep 08, 2021</td>
+        <td>96</td>
+      </tr>
+      <tr>
+        <td>73</td>
+        <td>Twisted Canyon (Shortcut) 300 HP</td>
+        <td>2:56.395</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 11, 2022</td>
+        <td>Sep 29, 2022</td>
+        <td>80</td>
+      </tr>
+      <tr>
+        <td>74</td>
+        <td>Forbidden Fortress (Shortcut) 300 HP</td>
+        <td>1:23.392</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Jul 11, 2022</td>
+        <td>Sep 23, 2022</td>
+        <td>74</td>
+      </tr>
+      <tr>
+        <td>75</td>
+        <td>Cannon Crossover (Non-Shortcut) 200 HP</td>
+        <td>3:23.817</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>May 31, 2023</td>
+        <td>Jul 07, 2023</td>
+        <td>37</td>
+      </tr>
+      <tr>
+        <td>76</td>
+        <td>Gold Rush Road (Non-Shortcut) 200 HP</td>
+        <td>4:17.609</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>Jun 01, 2023</td>
+        <td>Jul 03, 2023</td>
+        <td>32</td>
+      </tr>
+      <tr>
+        <td>77</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP</td>
+        <td>2:14.835</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>Jun 01, 2023</td>
+        <td>Jul 02, 2023</td>
+        <td>31</td>
+      </tr>
+      <tr>
+        <td>78</td>
+        <td>Forbidden Fortress (Non-Shortcut) 100 HP</td>
+        <td>2:49.910</td>
+        <td><span style="color:#b8b8b8">AB20</span></td>
+        <td>Sep 27, 2021</td>
+        <td>Oct 23, 2021</td>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>78</td>
+        <td>Forbidden Fortress (Non-Shortcut) 200 HP</td>
+        <td>2:36.850</td>
+        <td><span style="color:#b8b8b8">AB20</span></td>
+        <td>Sep 27, 2021</td>
+        <td>Oct 23, 2021</td>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>80</td>
+        <td>Twisted Canyon (Shortcut) 100 HP</td>
+        <td>2:54.309</td>
+        <td><span style="color:#44bbee">CanisCanemEdit</span></td>
+        <td>Jul 31, 2024</td>
+        <td>Unbeaten</td>
+        <td class="unbeaten" data-date-achieved="45503"></td>
+      </tr>
+      <tr>
+        <td>81</td>
+        <td>Boathouse Bay (Non-Shortcut) 200 HP</td>
+        <td>2:19.165</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>May 29, 2023</td>
+        <td>Jun 01, 2023</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>82</td>
+        <td>Aviator Ranch (Non-Shortcut) 200 HP</td>
+        <td>2:18.476</td>
+        <td><span style="color:#ee4444">GoBucky76</span></td>
+        <td>May 31, 2023</td>
+        <td>Jun 01, 2023</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>82</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP</td>
+        <td>1:34.339</td>
+        <td><span style="color:#b8b8b8">AB20</span></td>
+        <td>Sep 08, 2021</td>
+        <td>Sep 09, 2021</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>84</td>
+        <td>Rocky Road Speedway (Non-Shortcut) 200 HP</td>
+        <td>1:34.239</td>
+        <td><span style="color:#ee4444">SmugPotato</span></td>
+        <td>Sep 09, 2021</td>
+        <td>Sep 09, 2021</td>
+        <td>0</td>
+      </tr></tbody></table>
+        </div>
+        <p><a href="index.html">Back to Root</a></p>
+      </div>
+    </body>
+    </html>
